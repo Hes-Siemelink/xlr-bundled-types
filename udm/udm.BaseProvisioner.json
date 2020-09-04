@@ -1,0 +1,24 @@
+{
+  "type": "udm.BaseProvisioner",
+  "label": "Udm: Base Provisioner",
+  "virtual": true,
+  "description": "Base type for all provisioners.",
+  "properties": [{
+    "name": "hostTemplate",
+    "fqn": "udm.BaseProvisioner.hostTemplate",
+    "label": "Host Template",
+    "kind": "CI",
+    "description": "Host template on which provisioning actions will be executed.",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "udm.Template",
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

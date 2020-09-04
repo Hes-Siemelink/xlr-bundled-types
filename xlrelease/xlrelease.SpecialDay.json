@@ -20,7 +20,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": ""
     },
     {
       "name": "color",
@@ -37,7 +37,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": ""
     },
     {
       "name": "date",

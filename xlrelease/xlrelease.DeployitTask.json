@@ -155,7 +155,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null,
+      "default": "OK",
       "enumValues": [
         "OK",
         "ATTENTION_NEEDED",
@@ -293,7 +293,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": false
     },
     {
       "name": "waitForScheduledStartDate",
@@ -327,7 +327,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": false
     },
     {
       "name": "hasBeenDelayed",
@@ -344,7 +344,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": false
     },
     {
       "name": "precondition",
@@ -378,7 +378,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": 0
     },
     {
       "name": "executionId",
@@ -569,7 +569,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": 0
     },
     {
       "name": "totalStep",
@@ -586,7 +586,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": 0
     },
     {
       "name": "currentStepTitle",

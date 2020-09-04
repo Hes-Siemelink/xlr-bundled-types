@@ -53,7 +53,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": 0
     },
     {
       "name": "provisioners",

@@ -97,7 +97,7 @@
       "fqn": "udm.ProvisioningPackage.deployables",
       "label": "Deployables",
       "kind": "SET_OF_CI",
-      "description": "The set of deployables that are part of this package",
+      "description": "The set of provisionables that are part of this package",
       "category": "Common",
       "asContainment": true,
       "inspection": false,
@@ -108,6 +108,57 @@
       "size": "DEFAULT",
       "referencedType": "udm.Provisionable",
       "default": null
+    },
+    {
+      "name": "applicationDependencies",
+      "fqn": "udm.ProvisioningPackage.applicationDependencies",
+      "label": "Application Dependencies",
+      "kind": "MAP_STRING_STRING",
+      "description": "The versions of other applications that this package depends on, as a mapping from application name to version range",
+      "category": "Dependencies",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "dependencyResolution",
+      "fqn": "udm.ProvisioningPackage.dependencyResolution",
+      "label": "Dependency Resolution",
+      "kind": "STRING",
+      "description": "The resolution to use for application dependencies when deploying this application. Should be 'LATEST' or 'EXISTING'. A placeholder can be used.",
+      "category": "Dependencies",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "LATEST"
+    },
+    {
+      "name": "undeployDependencies",
+      "fqn": "udm.ProvisioningPackage.undeployDependencies",
+      "label": "Undeploy Unused Dependencies",
+      "kind": "STRING",
+      "description": "Whether to undeploy direct or transient dependencies of this application. Dependency is undeployed if there are not other application that depend on it. Should be 'true' or 'false'. A placeholder can be used.",
+      "category": "Dependencies",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "false"
     },
     {
       "name": "templates",
@@ -145,6 +196,7 @@
     }
   ],
   "superTypes": [
+    "udm.DeploymentPackage",
     "udm.Version",
     "udm.BaseConfigurationItem"
   ]

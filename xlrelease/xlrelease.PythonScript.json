@@ -40,6 +40,24 @@
       "default": null
     },
     {
+      "name": "maxOutputPropertySize",
+      "fqn": "xlrelease.PythonScript.maxOutputPropertySize",
+      "label": "Max Output Property Size",
+      "kind": "INTEGER",
+      "description": "Maximum size of output property values of type string. Default value is 32768",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 32768,
+      "hidden": true
+    },
+    {
       "name": "iconLocation",
       "fqn": "xlrelease.PythonScript.iconLocation",
       "label": "Icon Location",

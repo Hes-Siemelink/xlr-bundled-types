@@ -37,7 +37,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": ""
     },
     {
       "name": "initialFire",

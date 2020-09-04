@@ -37,7 +37,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": 0
     },
     {
       "name": "tls",
@@ -54,7 +54,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null
+      "default": false
     },
     {
       "name": "fromAddress",
