@@ -111,7 +111,7 @@
       "fqn": "xlrelease.GateTask.endDate",
       "label": "End Date",
       "kind": "DATE",
-      "description": "The actual end date",
+      "description": "The actual end date.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -311,6 +311,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": true
+    },
+    {
+      "name": "delayDuringBlackout",
+      "fqn": "xlrelease.GateTask.delayDuringBlackout",
+      "label": "Delay During Blackout",
+      "kind": "BOOLEAN",
+      "description": "The task is not started when a blackout period is active.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
     },
     {
       "name": "hasBeenFlagged",

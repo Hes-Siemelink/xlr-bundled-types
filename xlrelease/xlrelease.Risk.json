@@ -1,0 +1,63 @@
+{
+  "type": "xlrelease.Risk",
+  "label": "Xlrelease: Risk",
+  "virtual": false,
+  "description": "Summary of risk calculations",
+  "properties": [
+    {
+      "name": "score",
+      "fqn": "xlrelease.Risk.score",
+      "label": "Score",
+      "kind": "INTEGER",
+      "description": "Maximum of all assessments scores",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 0
+    },
+    {
+      "name": "totalScore",
+      "fqn": "xlrelease.Risk.totalScore",
+      "label": "Total Score",
+      "kind": "INTEGER",
+      "description": "Sum of scores of all assessments",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 0
+    },
+    {
+      "name": "riskAssessments",
+      "fqn": "xlrelease.Risk.riskAssessments",
+      "label": "Risk Assessments",
+      "kind": "LIST_OF_CI",
+      "description": "List of assessments",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.RiskAssessment",
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.ReleaseExtension",
+    "udm.BaseConfigurationItem"
+  ]
+}

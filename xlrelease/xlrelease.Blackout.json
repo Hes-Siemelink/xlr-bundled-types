@@ -1,0 +1,61 @@
+{
+  "type": "xlrelease.Blackout",
+  "label": "Xlrelease: Blackout",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Blackout date period in which no tasks should start execution",
+  "properties": [
+    {
+      "name": "label",
+      "fqn": "xlrelease.Blackout.label",
+      "label": "Label",
+      "kind": "STRING",
+      "description": "User defined name of the blackout period",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "startDate",
+      "fqn": "xlrelease.Blackout.startDate",
+      "label": "Start Date",
+      "kind": "DATE",
+      "description": "The start date time of the blackout",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "endDate",
+      "fqn": "xlrelease.Blackout.endDate",
+      "label": "End Date",
+      "kind": "DATE",
+      "description": "The end date time of the blackout",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

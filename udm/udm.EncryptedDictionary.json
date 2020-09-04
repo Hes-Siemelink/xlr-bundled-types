@@ -16,7 +16,7 @@
       "inspection": false,
       "required": false,
       "requiredInspection": false,
-      "password": false,
+      "password": true,
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,

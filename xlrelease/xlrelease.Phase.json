@@ -111,7 +111,7 @@
       "fqn": "xlrelease.Phase.endDate",
       "label": "End Date",
       "kind": "DATE",
-      "description": "The actual end date",
+      "description": "The actual end date.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,

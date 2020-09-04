@@ -1,0 +1,63 @@
+{
+  "type": "xlrelease.ReleaseProgress",
+  "label": "Xlrelease: Release Progress",
+  "virtual": false,
+  "description": "Summary of release progress",
+  "properties": [
+    {
+      "name": "totalTasks",
+      "fqn": "xlrelease.ReleaseProgress.totalTasks",
+      "label": "Total Tasks",
+      "kind": "INTEGER",
+      "description": "Total Tasks",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 0
+    },
+    {
+      "name": "totalRemainingTasks",
+      "fqn": "xlrelease.ReleaseProgress.totalRemainingTasks",
+      "label": "Total Remaining Tasks",
+      "kind": "INTEGER",
+      "description": "Total Remaining Tasks",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 0
+    },
+    {
+      "name": "phasesProgress",
+      "fqn": "xlrelease.ReleaseProgress.phasesProgress",
+      "label": "Phases Progress",
+      "kind": "MAP_STRING_STRING",
+      "description": "Phases Progress",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.ReleaseExtension",
+    "udm.BaseConfigurationItem"
+  ]
+}

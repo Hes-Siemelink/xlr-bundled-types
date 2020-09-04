@@ -1,0 +1,64 @@
+{
+  "type": "xlrelease.TaskAtRiskRiskAssessor",
+  "label": "TaskAtRiskRiskAssessor",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.TaskAtRiskRiskAssessor.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "The title of the item.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "description",
+      "fqn": "xlrelease.TaskAtRiskRiskAssessor.description",
+      "label": "Description",
+      "kind": "STRING",
+      "description": "The description of the item.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "weight",
+      "fqn": "xlrelease.TaskAtRiskRiskAssessor.weight",
+      "label": "Weight",
+      "kind": "INTEGER",
+      "description": "The weight of the assessor in the total calculation",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 1
+    }
+  ],
+  "superTypes": [
+    "xlrelease.TaskFlagRiskAssessor",
+    "xlrelease.RiskAssessor",
+    "udm.BaseConfigurationItem"
+  ]
+}

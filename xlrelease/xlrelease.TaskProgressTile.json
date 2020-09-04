@@ -5,24 +5,6 @@
   "description": "Description unavailable",
   "properties": [
     {
-      "name": "configurationUri",
-      "fqn": "xlrelease.TaskProgressTile.configurationUri",
-      "label": "Configuration Uri",
-      "kind": "STRING",
-      "description": "URI of the HTML file to render the configuration mode of this tile",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null,
-      "hidden": true
-    },
-    {
       "name": "defaultDashboards",
       "fqn": "xlrelease.TaskProgressTile.defaultDashboards",
       "label": "Default Dashboards",
@@ -267,6 +249,41 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "theme",
+      "fqn": "xlrelease.TaskProgressTile.theme",
+      "label": "Theme",
+      "kind": "STRING",
+      "description": "Theme",
+      "category": "input",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "green"
+    },
+    {
+      "name": "configurationUri",
+      "fqn": "xlrelease.TaskProgressTile.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the configuration mode of this tile",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "include\/TaskProgressTile\/config-tile.html",
+      "hidden": true
     }
   ],
   "superTypes": [

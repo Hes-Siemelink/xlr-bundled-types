@@ -1,0 +1,63 @@
+{
+  "type": "xlrelease.TaskFlagRiskAssessor",
+  "label": "Xlrelease: Task Flag Risk Assessor",
+  "virtual": true,
+  "description": "Default implementation of a CI that provides ID, name and type information.",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.TaskFlagRiskAssessor.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "The title of the item.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "description",
+      "fqn": "xlrelease.TaskFlagRiskAssessor.description",
+      "label": "Description",
+      "kind": "STRING",
+      "description": "The description of the item.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "weight",
+      "fqn": "xlrelease.TaskFlagRiskAssessor.weight",
+      "label": "Weight",
+      "kind": "INTEGER",
+      "description": "The weight of the assessor in the total calculation",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.RiskAssessor",
+    "udm.BaseConfigurationItem"
+  ]
+}

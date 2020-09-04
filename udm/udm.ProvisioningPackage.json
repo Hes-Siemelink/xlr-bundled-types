@@ -97,7 +97,7 @@
       "fqn": "udm.ProvisioningPackage.deployables",
       "label": "Deployables",
       "kind": "SET_OF_CI",
-      "description": "The set of provisionables that are part of this package",
+      "description": "The set of provisionables and deployables that are part of this package",
       "category": "Common",
       "asContainment": true,
       "inspection": false,
@@ -106,7 +106,7 @@
       "password": false,
       "transient": false,
       "size": "DEFAULT",
-      "referencedType": "udm.Provisionable",
+      "referencedType": "udm.Deployable",
       "default": null
     },
     {

@@ -106,6 +106,40 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "proxyUsername",
+      "fqn": "xldeploy.XLDeployServer.proxyUsername",
+      "label": "Proxy Username",
+      "kind": "STRING",
+      "description": "HTTP proxy username",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "proxyPassword",
+      "fqn": "xldeploy.XLDeployServer.proxyPassword",
+      "label": "Proxy Password",
+      "kind": "STRING",
+      "description": "HTTP proxy password",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": true,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": [
