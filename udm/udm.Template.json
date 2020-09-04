@@ -1,0 +1,43 @@
+{
+  "type": "udm.Template",
+  "label": "Udm: Template",
+  "virtual": true,
+  "description": "Base type for all generated template CIs.",
+  "properties": [
+    {
+      "name": "instanceName",
+      "fqn": "udm.Template.instanceName",
+      "label": "Instance Name",
+      "kind": "STRING",
+      "description": "Name that the created instance of this template will have. If not specified, the instance name will be generated based on the template name and provisioning ID.",
+      "category": "Template",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "childTemplates",
+      "fqn": "udm.Template.childTemplates",
+      "label": "Child Templates",
+      "kind": "SET_OF_CI",
+      "description": "Child templates associated with this template.",
+      "category": "Template",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

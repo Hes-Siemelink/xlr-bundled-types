@@ -1,0 +1,8 @@
+{
+  "type": "udm.FileArtifact",
+  "label": null,
+  "virtual": true,
+  "description": null,
+  "properties": [],
+  "superTypes": []
+}

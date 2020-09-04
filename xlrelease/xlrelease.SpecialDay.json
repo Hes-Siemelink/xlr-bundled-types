@@ -1,0 +1,61 @@
+{
+  "type": "xlrelease.SpecialDay",
+  "label": "Xlrelease: Special Day",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "A special day in the calendar",
+  "properties": [
+    {
+      "name": "label",
+      "fqn": "xlrelease.SpecialDay.label",
+      "label": "Label",
+      "kind": "STRING",
+      "description": "Label",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "color",
+      "fqn": "xlrelease.SpecialDay.color",
+      "label": "Color",
+      "kind": "STRING",
+      "description": "Color",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "date",
+      "fqn": "xlrelease.SpecialDay.date",
+      "label": "Date",
+      "kind": "STRING",
+      "description": "Date",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

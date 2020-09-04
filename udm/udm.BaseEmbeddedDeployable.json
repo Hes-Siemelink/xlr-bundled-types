@@ -1,0 +1,8 @@
+{
+  "type": "udm.BaseEmbeddedDeployable",
+  "label": "Udm: Base Embedded Deployable",
+  "virtual": true,
+  "description": "The supertype of all EmbeddedDeployables.",
+  "properties": [],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

@@ -1,0 +1,61 @@
+{
+  "type": "xlrelease.ReportsSettings",
+  "label": "Xlrelease: Reports Settings",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "warningThreshold",
+      "fqn": "xlrelease.ReportsSettings.warningThreshold",
+      "label": "Number of incidents for Warning alert",
+      "kind": "INTEGER",
+      "description": "Number of incidents for Warning alert",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 2
+    },
+    {
+      "name": "errorThreshold",
+      "fqn": "xlrelease.ReportsSettings.errorThreshold",
+      "label": "Number of incidents for Error alert",
+      "kind": "INTEGER",
+      "description": "Number of incidents for Error alert",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 4
+    },
+    {
+      "name": "criticalPhaseThreshold",
+      "fqn": "xlrelease.ReportsSettings.criticalPhaseThreshold",
+      "label": "Number of incidents for Critical Phase alert",
+      "kind": "INTEGER",
+      "description": "Number of incidents for Critical Phase alert",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 6
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

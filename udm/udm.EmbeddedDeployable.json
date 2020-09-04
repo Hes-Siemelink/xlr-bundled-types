@@ -1,0 +1,8 @@
+{
+  "type": "udm.EmbeddedDeployable",
+  "label": null,
+  "virtual": true,
+  "description": null,
+  "properties": [],
+  "superTypes": []
+}

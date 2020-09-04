@@ -1,0 +1,80 @@
+{
+  "type": "udm.BaseProvisionable",
+  "label": "Udm: Base Provisionable",
+  "virtual": true,
+  "description": "Base type for all provisionables.",
+  "properties": [
+    {
+      "name": "tags",
+      "fqn": "udm.BaseProvisionable.tags",
+      "label": "Tags",
+      "kind": "SET_OF_STRING",
+      "description": "If set, this deployable will only be mapped automatically to containers with the same tag.",
+      "category": "Deployment",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "cardinality",
+      "fqn": "udm.BaseProvisionable.cardinality",
+      "label": "Cardinality",
+      "kind": "STRING",
+      "description": "Number of instances to launch.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "1"
+    },
+    {
+      "name": "boundTemplates",
+      "fqn": "udm.BaseProvisionable.boundTemplates",
+      "label": "Bound Templates",
+      "kind": "SET_OF_CI",
+      "description": "The set of CI templates.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null
+    },
+    {
+      "name": "provisioners",
+      "fqn": "udm.BaseProvisionable.provisioners",
+      "label": "Provisioners",
+      "kind": "LIST_OF_CI",
+      "description": "A list of provisioners associated with the instance.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Provisioner",
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.BaseDeployable",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "xlrelease.GlobalVariables",
+  "label": "Xlrelease: Global Variables",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Global variables container",
+  "properties": [{
+    "name": "variables",
+    "fqn": "xlrelease.GlobalVariables.variables",
+    "label": "Variables",
+    "kind": "LIST_OF_CI",
+    "description": "List of global variable CIs",
+    "category": "Common",
+    "asContainment": true,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "xlrelease.Variable",
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

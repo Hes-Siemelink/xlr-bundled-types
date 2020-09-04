@@ -1,0 +1,25 @@
+{
+  "type": "xlrelease.PollingSettings",
+  "label": "Xlrelease: Polling Settings",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "pollingInterval",
+    "fqn": "xlrelease.PollingSettings.pollingInterval",
+    "label": "Polling interval (seconds)",
+    "kind": "INTEGER",
+    "description": "Polling interval (seconds)",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": 1
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

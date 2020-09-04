@@ -1,0 +1,66 @@
+{
+  "type": "udm.AppliedProvisioner",
+  "label": "Udm: Applied Provisioner",
+  "deployableType": "udm.Provisioner",
+  "containerType": "udm.BaseDeployed",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "deployable",
+      "fqn": "udm.AppliedProvisioner.deployable",
+      "label": "Deployable",
+      "kind": "CI",
+      "description": "The embedded deployable that this embedded deployed is derived from.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.EmbeddedDeployable",
+      "default": null
+    },
+    {
+      "name": "container",
+      "fqn": "udm.AppliedProvisioner.container",
+      "label": "Container",
+      "kind": "CI",
+      "description": "The (embedded) deployed which contains this embedded deployed.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.EmbeddedDeployedContainer",
+      "default": null
+    },
+    {
+      "name": "placeholders",
+      "fqn": "udm.AppliedProvisioner.placeholders",
+      "label": "Placeholders",
+      "kind": "MAP_STRING_STRING",
+      "description": "A Map containing all the placeholders mapped to their values. Special values are &lt;ignore&gt; or &lt;empty&gt;",
+      "category": "Placeholders",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.EmbeddedDeployedArtifact",
+    "udm.BaseEmbeddedDeployed",
+    "udm.BaseConfigurationItem"
+  ]
+}

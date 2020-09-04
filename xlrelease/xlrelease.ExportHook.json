@@ -1,0 +1,64 @@
+{
+  "type": "xlrelease.ExportHook",
+  "label": "Xlrelease: Export Hook",
+  "virtual": true,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.ExportHook.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Symbolic name for the configuration",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "enabled",
+      "fqn": "xlrelease.ExportHook.enabled",
+      "label": "Enabled",
+      "kind": "BOOLEAN",
+      "description": "Enabled",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true
+    },
+    {
+      "name": "scriptLocation",
+      "fqn": "xlrelease.ExportHook.scriptLocation",
+      "label": "Script Location",
+      "kind": "STRING",
+      "description": "Script Location",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "",
+      "hidden": true
+    }
+  ],
+  "superTypes": [
+    "xlrelease.Configuration",
+    "udm.BaseConfigurationItem"
+  ]
+}

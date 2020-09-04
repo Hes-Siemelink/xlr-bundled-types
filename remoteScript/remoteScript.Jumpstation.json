@@ -1,0 +1,70 @@
+{
+  "type": "remoteScript.Jumpstation",
+  "label": "Remote Script: Jumpstation",
+  "virtual": true,
+  "description": "Base class for jumpstations.",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "remoteScript.Jumpstation.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Symbolic name for the configuration",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "os",
+      "fqn": "remoteScript.Jumpstation.os",
+      "label": "Os",
+      "kind": "ENUM",
+      "description": "Os",
+      "category": "input",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "UNIX",
+      "enumValues": [
+        "WINDOWS",
+        "UNIX",
+        "ZOS"
+      ],
+      "hidden": true
+    },
+    {
+      "name": "temporaryDirectoryPath",
+      "fqn": "remoteScript.Jumpstation.temporaryDirectoryPath",
+      "label": "Temporary Directory Path",
+      "kind": "STRING",
+      "description": "The default platform value (\/tmp) suffices as no temporary files will be placed on the jumpstation.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null,
+      "hidden": true
+    }
+  ],
+  "superTypes": [
+    "xlrelease.Configuration",
+    "udm.BaseConfigurationItem"
+  ]
+}

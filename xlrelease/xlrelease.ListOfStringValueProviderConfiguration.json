@@ -1,0 +1,46 @@
+{
+  "type": "xlrelease.ListOfStringValueProviderConfiguration",
+  "label": "Xlrelease: List Of String Value Provider Configuration",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "variable",
+      "fqn": "xlrelease.ListOfStringValueProviderConfiguration.variable",
+      "label": "Variable",
+      "kind": "CI",
+      "description": "Variable",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Variable",
+      "default": null
+    },
+    {
+      "name": "values",
+      "fqn": "xlrelease.ListOfStringValueProviderConfiguration.values",
+      "label": "Possible values",
+      "kind": "LIST_OF_STRING",
+      "description": "Possible values",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.ValueProviderConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

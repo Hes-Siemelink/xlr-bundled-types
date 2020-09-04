@@ -1,0 +1,8 @@
+{
+  "type": "core.Securable",
+  "label": null,
+  "virtual": true,
+  "description": null,
+  "properties": [],
+  "superTypes": []
+}

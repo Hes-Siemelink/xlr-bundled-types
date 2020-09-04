@@ -1,0 +1,8 @@
+{
+  "type": "udm.Configuration",
+  "label": "Udm: Configuration",
+  "virtual": true,
+  "description": "Contains deployment configuration information",
+  "properties": [],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

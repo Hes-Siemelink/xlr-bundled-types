@@ -1,0 +1,24 @@
+{
+  "type": "udm.BaseContainer",
+  "label": "Udm: Base Container",
+  "virtual": true,
+  "description": "The supertype of all Containers.",
+  "properties": [{
+    "name": "tags",
+    "fqn": "udm.BaseContainer.tags",
+    "label": "Tags",
+    "kind": "SET_OF_STRING",
+    "description": "If set, only deployables with the same tag will be automatically mapped to this container.",
+    "category": "Deployment",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

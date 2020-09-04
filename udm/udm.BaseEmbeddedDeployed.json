@@ -1,0 +1,43 @@
+{
+  "type": "udm.BaseEmbeddedDeployed",
+  "label": "Udm: Base Embedded Deployed",
+  "virtual": true,
+  "description": "The supertype of all EmbeddedDeployeds.",
+  "properties": [
+    {
+      "name": "deployable",
+      "fqn": "udm.BaseEmbeddedDeployed.deployable",
+      "label": "Deployable",
+      "kind": "CI",
+      "description": "The embedded deployable that this embedded deployed is derived from.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.EmbeddedDeployable",
+      "default": null
+    },
+    {
+      "name": "container",
+      "fqn": "udm.BaseEmbeddedDeployed.container",
+      "label": "Container",
+      "kind": "CI",
+      "description": "The (embedded) deployed which contains this embedded deployed.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.EmbeddedDeployedContainer",
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

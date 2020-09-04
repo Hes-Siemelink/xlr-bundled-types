@@ -1,0 +1,82 @@
+{
+  "type": "udm.EncryptedDictionary",
+  "label": "Udm: Encrypted Dictionary",
+  "virtual": false,
+  "root": "Environments",
+  "description": "An EncryptedDictionary contains keys and encrypted values that can be replaced. Values are encrypted when they are stored and decrypted before being used.",
+  "properties": [
+    {
+      "name": "entries",
+      "fqn": "udm.EncryptedDictionary.entries",
+      "label": "Entries",
+      "kind": "MAP_STRING_STRING",
+      "description": "The dictionary entries",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "encryptedEntries",
+      "fqn": "udm.EncryptedDictionary.encryptedEntries",
+      "label": "Encrypted Entries",
+      "kind": "MAP_STRING_STRING",
+      "description": "The encrypted dictionary entries",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": true,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null,
+      "hidden": true
+    },
+    {
+      "name": "restrictToContainers",
+      "fqn": "udm.EncryptedDictionary.restrictToContainers",
+      "label": "Restrict to containers",
+      "kind": "SET_OF_CI",
+      "description": "Only apply this dictionary to the containers mentioned",
+      "category": "Restrictions",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Container",
+      "default": null
+    },
+    {
+      "name": "restrictToApplications",
+      "fqn": "udm.EncryptedDictionary.restrictToApplications",
+      "label": "Restrict to applications",
+      "kind": "SET_OF_CI",
+      "description": "Only apply this dictionary to the applications mentioned",
+      "category": "Restrictions",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Application",
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.Dictionary",
+    "udm.BaseConfigurationItem"
+  ]
+}

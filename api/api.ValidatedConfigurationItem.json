@@ -1,0 +1,8 @@
+{
+  "type": "api.ValidatedConfigurationItem",
+  "label": "Api: Validated Configuration Item",
+  "virtual": true,
+  "description": "Description unavailable",
+  "properties": [],
+  "superTypes": []
+}

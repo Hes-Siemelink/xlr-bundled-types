@@ -1,0 +1,8 @@
+{
+  "type": "internal.Root",
+  "label": "Internal: Root",
+  "virtual": false,
+  "description": "A root in the JCR tree",
+  "properties": [],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

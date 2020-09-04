@@ -1,0 +1,43 @@
+{
+  "type": "xlrelease.GateCondition",
+  "label": "Xlrelease: Gate Condition",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.GateCondition.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Title",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "checked",
+      "fqn": "xlrelease.GateCondition.checked",
+      "label": "Checked",
+      "kind": "BOOLEAN",
+      "description": "Checked",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

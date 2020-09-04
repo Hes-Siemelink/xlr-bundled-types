@@ -1,0 +1,8 @@
+{
+  "type": "udm.BaseConfigurationItem",
+  "label": "Udm: Base Configuration Item",
+  "virtual": true,
+  "description": "Default implementation of a CI that provides ID, name and type information.",
+  "properties": [],
+  "superTypes": []
+}

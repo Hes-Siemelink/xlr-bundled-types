@@ -1,0 +1,24 @@
+{
+  "type": "xlrelease.ValueProviderConfiguration",
+  "label": "Xlrelease: Value Provider Configuration",
+  "virtual": true,
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "variable",
+    "fqn": "xlrelease.ValueProviderConfiguration.variable",
+    "label": "Variable",
+    "kind": "CI",
+    "description": "Variable",
+    "category": "Common",
+    "asContainment": true,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "xlrelease.Variable",
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

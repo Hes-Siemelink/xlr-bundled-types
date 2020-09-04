@@ -1,0 +1,8 @@
+{
+  "type": "core.Directory",
+  "label": "Core: Directory",
+  "virtual": false,
+  "description": "A Group of configuration items",
+  "properties": [],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

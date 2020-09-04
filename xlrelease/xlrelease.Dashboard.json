@@ -1,0 +1,27 @@
+{
+  "type": "xlrelease.Dashboard",
+  "label": "Xlrelease: Dashboard",
+  "virtual": false,
+  "description": "A dashboard with tiles displayed in XL Release UI",
+  "properties": [{
+    "name": "tiles",
+    "fqn": "xlrelease.Dashboard.tiles",
+    "label": "Tiles",
+    "kind": "LIST_OF_CI",
+    "description": "Tiles in this dashboard",
+    "category": "Common",
+    "asContainment": true,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "xlrelease.Tile",
+    "default": null
+  }],
+  "superTypes": [
+    "xlrelease.ReleaseExtension",
+    "udm.BaseConfigurationItem"
+  ]
+}

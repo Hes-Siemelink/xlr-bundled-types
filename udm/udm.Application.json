@@ -1,0 +1,25 @@
+{
+  "type": "udm.Application",
+  "label": "Udm: Application",
+  "virtual": false,
+  "root": "Applications",
+  "description": "An application. Each version of the application is a separate package.",
+  "properties": [{
+    "name": "lastVersion",
+    "fqn": "udm.Application.lastVersion",
+    "label": "Last Version",
+    "kind": "STRING",
+    "description": "The latest application version number as the highest udm.Version name sorted in lexicographical ordering.",
+    "category": "Deployment",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

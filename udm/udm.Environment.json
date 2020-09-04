@@ -1,0 +1,61 @@
+{
+  "type": "udm.Environment",
+  "label": "Udm: Environment",
+  "virtual": false,
+  "root": "Environments",
+  "description": "Groups infrastructure CIs and dictionaries and serves as a target for deployment.",
+  "properties": [
+    {
+      "name": "members",
+      "fqn": "udm.Environment.members",
+      "label": "Containers",
+      "kind": "SET_OF_CI",
+      "description": "The infrastructure components of this Environment",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Container",
+      "default": null
+    },
+    {
+      "name": "dictionaries",
+      "fqn": "udm.Environment.dictionaries",
+      "label": "Dictionaries",
+      "kind": "LIST_OF_CI",
+      "description": "The dictionaries providing placeholder values. If the same entry exists in multiple dictionaries, the first one in the list is taken.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Dictionary",
+      "default": null
+    },
+    {
+      "name": "directoryPath",
+      "fqn": "udm.Environment.directoryPath",
+      "label": "Directory Path",
+      "kind": "STRING",
+      "description": "The directory path where the provisioned environment and provisioned configuration items will be stored.",
+      "category": "Provisioning",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

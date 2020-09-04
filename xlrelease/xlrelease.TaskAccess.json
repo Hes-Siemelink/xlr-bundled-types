@@ -1,0 +1,44 @@
+{
+  "type": "xlrelease.TaskAccess",
+  "label": "Xlrelease: Task Access",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "isAllowedToAll",
+      "fqn": "xlrelease.TaskAccess.isAllowedToAll",
+      "label": "Is Allowed To All",
+      "kind": "BOOLEAN",
+      "description": "Is Allowed To All",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "roles",
+      "fqn": "xlrelease.TaskAccess.roles",
+      "label": "Roles",
+      "kind": "LIST_OF_STRING",
+      "description": "Roles",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

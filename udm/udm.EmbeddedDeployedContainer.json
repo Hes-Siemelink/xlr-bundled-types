@@ -1,0 +1,8 @@
+{
+  "type": "udm.EmbeddedDeployedContainer",
+  "label": null,
+  "virtual": true,
+  "description": null,
+  "properties": [],
+  "superTypes": []
+}

@@ -1,0 +1,60 @@
+{
+  "type": "xlrelease.Comment",
+  "label": "Xlrelease: Comment",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "text",
+      "fqn": "xlrelease.Comment.text",
+      "label": "Text",
+      "kind": "STRING",
+      "description": "Text",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "author",
+      "fqn": "xlrelease.Comment.author",
+      "label": "Author",
+      "kind": "STRING",
+      "description": "Author",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "date",
+      "fqn": "xlrelease.Comment.date",
+      "label": "Date",
+      "kind": "DATE",
+      "description": "Date",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "xlrelease.Configuration",
+  "label": "Xlrelease: Configuration",
+  "virtual": true,
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "title",
+    "fqn": "xlrelease.Configuration.title",
+    "label": "Title",
+    "kind": "STRING",
+    "description": "Symbolic name for the configuration",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "xlrelease.Link",
+  "label": "Xlrelease: Link",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "parallelGroup",
+      "fqn": "xlrelease.Link.parallelGroup",
+      "label": "Parallel Group",
+      "kind": "CI",
+      "description": "Parallel Group",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.ParallelGroup",
+      "default": null
+    },
+    {
+      "name": "source",
+      "fqn": "xlrelease.Link.source",
+      "label": "Source",
+      "kind": "CI",
+      "description": "Source",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Task",
+      "default": null
+    },
+    {
+      "name": "target",
+      "fqn": "xlrelease.Link.target",
+      "label": "Target",
+      "kind": "CI",
+      "description": "Target",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Task",
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

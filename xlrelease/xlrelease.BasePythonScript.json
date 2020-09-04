@@ -1,0 +1,25 @@
+{
+  "type": "xlrelease.BasePythonScript",
+  "label": "Xlrelease: Base Python Script",
+  "virtual": true,
+  "description": "Default implementation of a CI that provides ID, name and type information.",
+  "properties": [{
+    "name": "scriptLocation",
+    "fqn": "xlrelease.BasePythonScript.scriptLocation",
+    "label": "Script Location",
+    "kind": "STRING",
+    "description": "Script Location",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": true,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": "",
+    "hidden": true
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

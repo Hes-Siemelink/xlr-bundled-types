@@ -1,0 +1,47 @@
+{
+  "type": "xlrelease.Folder",
+  "label": "Xlrelease: Folder",
+  "virtual": false,
+  "root": "Applications",
+  "description": "A grouping of releases and templates with own configuration",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.Folder.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "User provided title of the folder",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "children",
+      "fqn": "xlrelease.Folder.children",
+      "label": "Children",
+      "kind": "SET_OF_CI",
+      "description": "Sub-folders of this folder",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Folder",
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "core.Directory",
+    "udm.BaseConfigurationItem"
+  ]
+}

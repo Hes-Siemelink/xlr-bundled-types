@@ -1,0 +1,63 @@
+{
+  "type": "udm.BaseDeployedArtifact",
+  "label": "Udm: Base Deployed Artifact",
+  "virtual": true,
+  "description": "The supertype of all DeployedArtifacts.",
+  "properties": [
+    {
+      "name": "deployable",
+      "fqn": "udm.BaseDeployedArtifact.deployable",
+      "label": "Deployable",
+      "kind": "CI",
+      "description": "The deployable that this deployed is derived from.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Deployable",
+      "default": null
+    },
+    {
+      "name": "container",
+      "fqn": "udm.BaseDeployedArtifact.container",
+      "label": "Container",
+      "kind": "CI",
+      "description": "The container on which this deployed runs.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Container",
+      "default": null
+    },
+    {
+      "name": "placeholders",
+      "fqn": "udm.BaseDeployedArtifact.placeholders",
+      "label": "Placeholders",
+      "kind": "MAP_STRING_STRING",
+      "description": "A Map containing all the placeholders mapped to their values. Special values are &lt;ignore&gt; or &lt;empty&gt;",
+      "category": "Placeholders",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.BaseDeployed",
+    "udm.BaseConfigurationItem"
+  ]
+}

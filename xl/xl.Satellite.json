@@ -1,0 +1,81 @@
+{
+  "type": "xl.Satellite",
+  "label": "Xl: Satellite",
+  "virtual": false,
+  "root": "Infrastructure",
+  "description": "XL satellite configuration item.",
+  "properties": [
+    {
+      "name": "tags",
+      "fqn": "xl.Satellite.tags",
+      "label": "Tags",
+      "kind": "SET_OF_STRING",
+      "description": "If set, only deployables with the same tag will be automatically mapped to this container.",
+      "category": "Deployment",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "address",
+      "fqn": "xl.Satellite.address",
+      "label": "Address",
+      "kind": "STRING",
+      "description": "Address where the satellite can be reached.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "MEDIUM",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "protocolPort",
+      "fqn": "xl.Satellite.protocolPort",
+      "label": "Port",
+      "kind": "INTEGER",
+      "description": "Port where the satellite is listening.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "SMALL",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "encrypted",
+      "fqn": "xl.Satellite.encrypted",
+      "label": "Encryption",
+      "kind": "BOOLEAN",
+      "description": "Enable encrypted communication.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.BaseContainer",
+    "udm.BaseConfigurationItem"
+  ]
+}
