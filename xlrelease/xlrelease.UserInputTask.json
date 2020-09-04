@@ -227,7 +227,7 @@
       "password": false,
       "transient": false,
       "size": "DEFAULT",
-      "referencedType": "xlrelease.PlanItem",
+      "referencedType": "xlrelease.TaskContainer",
       "default": null
     },
     {
