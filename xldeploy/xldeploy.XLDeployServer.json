@@ -1,13 +1,13 @@
 {
-  "type": "nexus.Server",
-  "label": "Nexus: Server",
+  "type": "xldeploy.XLDeployServer",
+  "label": "XL Deploy Server",
   "virtual": false,
   "root": "Configuration",
   "description": "Description unavailable",
   "properties": [
     {
       "name": "title",
-      "fqn": "nexus.Server.title",
+      "fqn": "xldeploy.XLDeployServer.title",
       "label": "Title",
       "kind": "STRING",
       "description": "Symbolic name for the configuration",
@@ -24,7 +24,7 @@
     },
     {
       "name": "url",
-      "fqn": "nexus.Server.url",
+      "fqn": "xldeploy.XLDeployServer.url",
       "label": "Url",
       "kind": "STRING",
       "description": "Address where the server can be reached",
@@ -41,7 +41,7 @@
     },
     {
       "name": "username",
-      "fqn": "nexus.Server.username",
+      "fqn": "xldeploy.XLDeployServer.username",
       "label": "Username",
       "kind": "STRING",
       "description": "Login user ID on the server",
@@ -58,7 +58,7 @@
     },
     {
       "name": "password",
-      "fqn": "nexus.Server.password",
+      "fqn": "xldeploy.XLDeployServer.password",
       "label": "Password",
       "kind": "STRING",
       "description": "Login user password on the server",
@@ -75,7 +75,7 @@
     },
     {
       "name": "proxyHost",
-      "fqn": "nexus.Server.proxyHost",
+      "fqn": "xldeploy.XLDeployServer.proxyHost",
       "label": "Proxy Host",
       "kind": "STRING",
       "description": "HTTP proxy host",
@@ -92,7 +92,7 @@
     },
     {
       "name": "proxyPort",
-      "fqn": "nexus.Server.proxyPort",
+      "fqn": "xldeploy.XLDeployServer.proxyPort",
       "label": "Proxy Port",
       "kind": "STRING",
       "description": "HTTP proxy port",
@@ -106,60 +106,6 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
-    },
-    {
-      "name": "checkConfigurationPath",
-      "fqn": "nexus.Server.checkConfigurationPath",
-      "label": "Check Configuration Path",
-      "kind": "STRING",
-      "description": "Check Configuration Path",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "\/service\/local\/authentication\/login",
-      "hidden": true
-    },
-    {
-      "name": "checkConfigurationContentType",
-      "fqn": "nexus.Server.checkConfigurationContentType",
-      "label": "Check Configuration Content Type",
-      "kind": "STRING",
-      "description": "Check Configuration Content Type",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "application\/json",
-      "hidden": true
-    },
-    {
-      "name": "scriptLocation",
-      "fqn": "nexus.Server.scriptLocation",
-      "label": "Script Location",
-      "kind": "STRING",
-      "description": "Script Location",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "configuration\/HttpConnectionCheck.py",
-      "hidden": true
     }
   ],
   "superTypes": [

@@ -450,6 +450,24 @@
       "default": null
     },
     {
+      "name": "configurationUri",
+      "fqn": "xlrelease.NotificationTask.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the task",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "partials\/tasks\/details\/notification-details.html",
+      "hidden": true
+    },
+    {
       "name": "automated",
       "fqn": "xlrelease.NotificationTask.automated",
       "label": "Automated",

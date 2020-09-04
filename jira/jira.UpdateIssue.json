@@ -40,6 +40,24 @@
       "default": null
     },
     {
+      "name": "configurationUri",
+      "fqn": "jira.UpdateIssue.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the task for custom script tasks",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "",
+      "hidden": true
+    },
+    {
       "name": "maxOutputPropertySize",
       "fqn": "jira.UpdateIssue.maxOutputPropertySize",
       "label": "Max Output Property Size",

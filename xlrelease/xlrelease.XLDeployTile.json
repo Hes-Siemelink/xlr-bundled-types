@@ -1,6 +1,6 @@
 {
   "type": "xlrelease.XLDeployTile",
-  "label": "XL deploy tile",
+  "label": "XL Deploy tile",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
@@ -213,7 +213,7 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "include\/XLDeployTile\/xl-deploy-tile-view.html",
+      "default": "include\/xldeploy\/DeployTile\/xl-deploy-tile-view.html",
       "hidden": true
     },
     {
@@ -248,7 +248,7 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "include\/XLDeployTile\/xl-deploy-tile-details.html",
+      "default": "include\/xldeploy\/DeployTile\/xl-deploy-tile-details.html",
       "hidden": true
     }
   ],

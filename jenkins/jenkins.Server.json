@@ -108,11 +108,11 @@
       "default": null
     },
     {
-      "name": "pollInterval",
-      "fqn": "jenkins.Server.pollInterval",
-      "label": "Poll Interval",
-      "kind": "INTEGER",
-      "description": "Frequency of job progress requests, in seconds",
+      "name": "checkConfigurationPath",
+      "fqn": "jenkins.Server.checkConfigurationPath",
+      "label": "Check Configuration Path",
+      "kind": "STRING",
+      "description": "Check Configuration Path",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -122,7 +122,25 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": 5,
+      "default": "\/api\/json",
+      "hidden": true
+    },
+    {
+      "name": "scriptLocation",
+      "fqn": "jenkins.Server.scriptLocation",
+      "label": "Script Location",
+      "kind": "STRING",
+      "description": "Script Location",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "configuration\/HttpConnectionCheck.py",
       "hidden": true
     }
   ],

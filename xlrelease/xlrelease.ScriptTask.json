@@ -1,6 +1,6 @@
 {
   "type": "xlrelease.ScriptTask",
-  "label": "Script",
+  "label": "Script: Jython Script",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
@@ -450,6 +450,24 @@
       "default": null
     },
     {
+      "name": "configurationUri",
+      "fqn": "xlrelease.ScriptTask.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the task",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "partials\/tasks\/details\/script-details.html",
+      "hidden": true
+    },
+    {
       "name": "automated",
       "fqn": "xlrelease.ScriptTask.automated",
       "label": "Automated",
@@ -522,6 +540,7 @@
     }
   ],
   "superTypes": [
+    "xlrelease.ResolvableScriptTask",
     "xlrelease.BaseScriptTask",
     "xlrelease.Task",
     "xlrelease.PlanItem",

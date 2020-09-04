@@ -1,12 +1,12 @@
 {
-  "type": "xlrelease.CreateReleaseTask",
-  "label": "Create Release",
-  "virtual": false,
+  "type": "xlrelease.ResolvableScriptTask",
+  "label": "Manual",
+  "virtual": true,
   "description": "Description unavailable",
   "properties": [
     {
       "name": "title",
-      "fqn": "xlrelease.CreateReleaseTask.title",
+      "fqn": "xlrelease.ResolvableScriptTask.title",
       "label": "Title",
       "kind": "STRING",
       "description": "The title of the item.",
@@ -23,7 +23,7 @@
     },
     {
       "name": "description",
-      "fqn": "xlrelease.CreateReleaseTask.description",
+      "fqn": "xlrelease.ResolvableScriptTask.description",
       "label": "Description",
       "kind": "STRING",
       "description": "The description of the item.",
@@ -40,7 +40,7 @@
     },
     {
       "name": "owner",
-      "fqn": "xlrelease.CreateReleaseTask.owner",
+      "fqn": "xlrelease.ResolvableScriptTask.owner",
       "label": "Owner",
       "kind": "STRING",
       "description": "The owner of the item.",
@@ -57,7 +57,7 @@
     },
     {
       "name": "scheduledStartDate",
-      "fqn": "xlrelease.CreateReleaseTask.scheduledStartDate",
+      "fqn": "xlrelease.ResolvableScriptTask.scheduledStartDate",
       "label": "Scheduled Start Date",
       "kind": "DATE",
       "description": "The date that the item is supposed to start.",
@@ -74,7 +74,7 @@
     },
     {
       "name": "dueDate",
-      "fqn": "xlrelease.CreateReleaseTask.dueDate",
+      "fqn": "xlrelease.ResolvableScriptTask.dueDate",
       "label": "Due Date",
       "kind": "DATE",
       "description": "The date that the item is supposed to end.",
@@ -91,7 +91,7 @@
     },
     {
       "name": "startDate",
-      "fqn": "xlrelease.CreateReleaseTask.startDate",
+      "fqn": "xlrelease.ResolvableScriptTask.startDate",
       "label": "Start Date",
       "kind": "DATE",
       "description": "The actual start date.",
@@ -108,7 +108,7 @@
     },
     {
       "name": "endDate",
-      "fqn": "xlrelease.CreateReleaseTask.endDate",
+      "fqn": "xlrelease.ResolvableScriptTask.endDate",
       "label": "End Date",
       "kind": "DATE",
       "description": "The actual end date",
@@ -125,7 +125,7 @@
     },
     {
       "name": "plannedDuration",
-      "fqn": "xlrelease.CreateReleaseTask.plannedDuration",
+      "fqn": "xlrelease.ResolvableScriptTask.plannedDuration",
       "label": "Planned Duration",
       "kind": "INTEGER",
       "description": "The time that the item is supposed to take to complete, in seconds.",
@@ -142,7 +142,7 @@
     },
     {
       "name": "flagStatus",
-      "fqn": "xlrelease.CreateReleaseTask.flagStatus",
+      "fqn": "xlrelease.ResolvableScriptTask.flagStatus",
       "label": "Flag Status",
       "kind": "ENUM",
       "description": "Flags indicate that an item needs attention.",
@@ -164,7 +164,7 @@
     },
     {
       "name": "flagComment",
-      "fqn": "xlrelease.CreateReleaseTask.flagComment",
+      "fqn": "xlrelease.ResolvableScriptTask.flagComment",
       "label": "Flag Comment",
       "kind": "STRING",
       "description": "The reason the item is flagged.",
@@ -181,7 +181,7 @@
     },
     {
       "name": "comments",
-      "fqn": "xlrelease.CreateReleaseTask.comments",
+      "fqn": "xlrelease.ResolvableScriptTask.comments",
       "label": "Comments",
       "kind": "LIST_OF_CI",
       "description": "The comments on the task.",
@@ -198,7 +198,7 @@
     },
     {
       "name": "container",
-      "fqn": "xlrelease.CreateReleaseTask.container",
+      "fqn": "xlrelease.ResolvableScriptTask.container",
       "label": "Container",
       "kind": "CI",
       "description": "The phase or task this task is contained in.",
@@ -215,7 +215,7 @@
     },
     {
       "name": "attachments",
-      "fqn": "xlrelease.CreateReleaseTask.attachments",
+      "fqn": "xlrelease.ResolvableScriptTask.attachments",
       "label": "Attachments",
       "kind": "LIST_OF_CI",
       "description": "List of file attachments on this task.",
@@ -232,7 +232,7 @@
     },
     {
       "name": "status",
-      "fqn": "xlrelease.CreateReleaseTask.status",
+      "fqn": "xlrelease.ResolvableScriptTask.status",
       "label": "Status",
       "kind": "ENUM",
       "description": "The state the task is in.",
@@ -263,7 +263,7 @@
     },
     {
       "name": "team",
-      "fqn": "xlrelease.CreateReleaseTask.team",
+      "fqn": "xlrelease.ResolvableScriptTask.team",
       "label": "Team",
       "kind": "STRING",
       "description": "The name of the team this task is assigned to.",
@@ -280,7 +280,7 @@
     },
     {
       "name": "overdueNotified",
-      "fqn": "xlrelease.CreateReleaseTask.overdueNotified",
+      "fqn": "xlrelease.ResolvableScriptTask.overdueNotified",
       "label": "Overdue Notified",
       "kind": "BOOLEAN",
       "description": "Overdue Notified",
@@ -297,7 +297,7 @@
     },
     {
       "name": "waitForScheduledStartDate",
-      "fqn": "xlrelease.CreateReleaseTask.waitForScheduledStartDate",
+      "fqn": "xlrelease.ResolvableScriptTask.waitForScheduledStartDate",
       "label": "Wait For Scheduled Start Date",
       "kind": "BOOLEAN",
       "description": "The task is not started until the scheduledStartDate is reached if set to true.",
@@ -314,7 +314,7 @@
     },
     {
       "name": "hasBeenFlagged",
-      "fqn": "xlrelease.CreateReleaseTask.hasBeenFlagged",
+      "fqn": "xlrelease.ResolvableScriptTask.hasBeenFlagged",
       "label": "Has Been Flagged",
       "kind": "BOOLEAN",
       "description": "Has Been Flagged",
@@ -331,7 +331,7 @@
     },
     {
       "name": "hasBeenDelayed",
-      "fqn": "xlrelease.CreateReleaseTask.hasBeenDelayed",
+      "fqn": "xlrelease.ResolvableScriptTask.hasBeenDelayed",
       "label": "Has Been Delayed",
       "kind": "BOOLEAN",
       "description": "Has Been Delayed",
@@ -348,7 +348,7 @@
     },
     {
       "name": "precondition",
-      "fqn": "xlrelease.CreateReleaseTask.precondition",
+      "fqn": "xlrelease.ResolvableScriptTask.precondition",
       "label": "Precondition",
       "kind": "STRING",
       "description": "A snippet of code that is evaluated when the task is started.",
@@ -365,7 +365,7 @@
     },
     {
       "name": "failuresCount",
-      "fqn": "xlrelease.CreateReleaseTask.failuresCount",
+      "fqn": "xlrelease.ResolvableScriptTask.failuresCount",
       "label": "Failures Count",
       "kind": "INTEGER",
       "description": "The number of times this task has failed.",
@@ -382,7 +382,7 @@
     },
     {
       "name": "executionId",
-      "fqn": "xlrelease.CreateReleaseTask.executionId",
+      "fqn": "xlrelease.ResolvableScriptTask.executionId",
       "label": "Execution Id",
       "kind": "STRING",
       "description": "Execution Id",
@@ -399,7 +399,7 @@
     },
     {
       "name": "variableMapping",
-      "fqn": "xlrelease.CreateReleaseTask.variableMapping",
+      "fqn": "xlrelease.ResolvableScriptTask.variableMapping",
       "label": "Variable Mapping",
       "kind": "MAP_STRING_STRING",
       "description": "Map from property name to a variable name that replaces that property",
@@ -416,7 +416,7 @@
     },
     {
       "name": "maxCommentSize",
-      "fqn": "xlrelease.CreateReleaseTask.maxCommentSize",
+      "fqn": "xlrelease.ResolvableScriptTask.maxCommentSize",
       "label": "Max Comment Size",
       "kind": "INTEGER",
       "description": "Maximum size of a comment on a task. Default value is 32768.",
@@ -434,7 +434,7 @@
     },
     {
       "name": "tags",
-      "fqn": "xlrelease.CreateReleaseTask.tags",
+      "fqn": "xlrelease.ResolvableScriptTask.tags",
       "label": "Tags",
       "kind": "LIST_OF_STRING",
       "description": "The tags of the task. Tags can be used for grouping and querying.",
@@ -451,7 +451,7 @@
     },
     {
       "name": "configurationUri",
-      "fqn": "xlrelease.CreateReleaseTask.configurationUri",
+      "fqn": "xlrelease.ResolvableScriptTask.configurationUri",
       "label": "Configuration Uri",
       "kind": "STRING",
       "description": "URI of the HTML file to render the task",
@@ -469,7 +469,7 @@
     },
     {
       "name": "automated",
-      "fqn": "xlrelease.CreateReleaseTask.automated",
+      "fqn": "xlrelease.ResolvableScriptTask.automated",
       "label": "Automated",
       "kind": "BOOLEAN",
       "description": "Indicates whether this is an automated task",
@@ -482,12 +482,12 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": true,
+      "default": false,
       "hidden": true
     },
     {
       "name": "preconditionEnabled",
-      "fqn": "xlrelease.CreateReleaseTask.preconditionEnabled",
+      "fqn": "xlrelease.ResolvableScriptTask.preconditionEnabled",
       "label": "Precondition Enabled",
       "kind": "BOOLEAN",
       "description": "Indicates whether preconditions should be enabled",
@@ -505,7 +505,7 @@
     },
     {
       "name": "sendNotificationWhenStarted",
-      "fqn": "xlrelease.CreateReleaseTask.sendNotificationWhenStarted",
+      "fqn": "xlrelease.ResolvableScriptTask.sendNotificationWhenStarted",
       "label": "Send Notification When Started",
       "kind": "BOOLEAN",
       "description": "Indicates whether a notification must be sent when the task starts",
@@ -518,113 +518,12 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": false,
+      "default": true,
       "hidden": true
-    },
-    {
-      "name": "newReleaseTitle",
-      "fqn": "xlrelease.CreateReleaseTask.newReleaseTitle",
-      "label": "Release title",
-      "kind": "STRING",
-      "description": "Title of the release to create.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "templateId",
-      "fqn": "xlrelease.CreateReleaseTask.templateId",
-      "label": "Template",
-      "kind": "STRING",
-      "description": "Template that will be used to create a release.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "startRelease",
-      "fqn": "xlrelease.CreateReleaseTask.startRelease",
-      "label": "Start release",
-      "kind": "BOOLEAN",
-      "description": "Immediately start the release after it is created.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": true
-    },
-    {
-      "name": "templateVariables",
-      "fqn": "xlrelease.CreateReleaseTask.templateVariables",
-      "label": "Variables",
-      "kind": "LIST_OF_CI",
-      "description": "Variable values to pass to the created release.",
-      "category": "Common",
-      "asContainment": true,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": "xlrelease.Variable",
-      "default": null
-    },
-    {
-      "name": "createdReleaseId",
-      "fqn": "xlrelease.CreateReleaseTask.createdReleaseId",
-      "label": "Created release ID",
-      "kind": "STRING",
-      "description": "ID of the release created from this task.",
-      "category": "output",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "releaseTags",
-      "fqn": "xlrelease.CreateReleaseTask.releaseTags",
-      "label": "Release tags",
-      "kind": "SET_OF_STRING",
-      "description": "Tags that will be propagated to created release.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
     }
   ],
   "superTypes": [
+    "xlrelease.BaseScriptTask",
     "xlrelease.Task",
     "xlrelease.PlanItem",
     "udm.BaseConfigurationItem"

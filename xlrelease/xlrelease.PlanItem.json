@@ -155,7 +155,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null,
+      "default": "OK",
       "enumValues": [
         "OK",
         "ATTENTION_NEEDED",

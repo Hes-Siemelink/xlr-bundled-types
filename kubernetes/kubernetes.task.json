@@ -22,6 +22,24 @@
       "default": null
     },
     {
+      "name": "configurationUri",
+      "fqn": "kubernetes.task.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the task for custom script tasks",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "",
+      "hidden": true
+    },
+    {
       "name": "maxOutputPropertySize",
       "fqn": "kubernetes.task.maxOutputPropertySize",
       "label": "Max Output Property Size",

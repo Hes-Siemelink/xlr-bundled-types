@@ -450,6 +450,24 @@
       "default": null
     },
     {
+      "name": "configurationUri",
+      "fqn": "xlrelease.UserInputTask.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the task",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null,
+      "hidden": true
+    },
+    {
       "name": "automated",
       "fqn": "xlrelease.UserInputTask.automated",
       "label": "Automated",
