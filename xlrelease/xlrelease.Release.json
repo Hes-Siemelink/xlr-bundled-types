@@ -181,6 +181,23 @@
       "default": null
     },
     {
+      "name": "overdueNotified",
+      "fqn": "xlrelease.Release.overdueNotified",
+      "label": "Overdue Notified",
+      "kind": "BOOLEAN",
+      "description": "Overdue Notified",
+      "category": "internal",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
+    },
+    {
       "name": "rootReleaseId",
       "fqn": "xlrelease.Release.rootReleaseId",
       "label": "Root Release Id",
@@ -636,6 +653,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "autoStart",
+      "fqn": "xlrelease.Release.autoStart",
+      "label": "Auto Start",
+      "kind": "BOOLEAN",
+      "description": "If true, the release will automatically start at scheduledStartDate.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
     },
     {
       "name": "riskScore",

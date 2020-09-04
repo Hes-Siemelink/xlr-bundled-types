@@ -1,0 +1,25 @@
+{
+  "type": "xlrelease.EmailNotificationSettings",
+  "label": "Xlrelease: Email Notification Settings",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "notificationTriggerSettings",
+    "fqn": "xlrelease.EmailNotificationSettings.notificationTriggerSettings",
+    "label": "Notification Trigger Settings",
+    "kind": "MAP_STRING_STRING",
+    "description": "Contains information about settings for the raised event",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

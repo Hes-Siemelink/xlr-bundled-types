@@ -37,6 +37,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "variableMapping",
+      "fqn": "xlrelease.ListOfStringValueProviderConfiguration.variableMapping",
+      "label": "Variable Mapping",
+      "kind": "MAP_STRING_STRING",
+      "description": "Map from property name to a variable name that replaces that property",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": [

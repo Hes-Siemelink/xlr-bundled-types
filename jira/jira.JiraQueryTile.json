@@ -318,6 +318,24 @@
       "size": "LARGE",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "embedded",
+      "fqn": "jira.JiraQueryTile.embedded",
+      "label": "Embedded",
+      "kind": "BOOLEAN",
+      "description": "Render content inside the main page without using iframe element.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true,
+      "hidden": true
     }
   ],
   "superTypes": [

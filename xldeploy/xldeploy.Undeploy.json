@@ -1,12 +1,12 @@
 {
-  "type": "xldeploy.Deploy",
-  "label": "XL Deploy: Deploy",
+  "type": "xldeploy.Undeploy",
+  "label": "XL Deploy: Undeploy",
   "virtual": false,
-  "description": "Description unavailable",
+  "description": "Executes an undeployment in XL Deploy",
   "properties": [
     {
       "name": "customScriptTask",
-      "fqn": "xldeploy.Deploy.customScriptTask",
+      "fqn": "xldeploy.Undeploy.customScriptTask",
       "label": "Custom Script Task",
       "kind": "CI",
       "description": "Custom Script Task",
@@ -23,7 +23,7 @@
     },
     {
       "name": "maxOutputPropertySize",
-      "fqn": "xldeploy.Deploy.maxOutputPropertySize",
+      "fqn": "xldeploy.Undeploy.maxOutputPropertySize",
       "label": "Max Output Property Size",
       "kind": "INTEGER",
       "description": "Maximum size of output property values of type string. Default value is 32768",
@@ -41,7 +41,7 @@
     },
     {
       "name": "outputVarHelpText",
-      "fqn": "xldeploy.Deploy.outputVarHelpText",
+      "fqn": "xldeploy.Undeploy.outputVarHelpText",
       "label": "Output Var Help Text",
       "kind": "STRING",
       "description": "Output Var Help Text",
@@ -59,7 +59,7 @@
     },
     {
       "name": "preconditionEnabled",
-      "fqn": "xldeploy.Deploy.preconditionEnabled",
+      "fqn": "xldeploy.Undeploy.preconditionEnabled",
       "label": "Precondition Enabled",
       "kind": "BOOLEAN",
       "description": "Indicates whether preconditions should be enabled",
@@ -77,7 +77,7 @@
     },
     {
       "name": "taskColor",
-      "fqn": "xldeploy.Deploy.taskColor",
+      "fqn": "xldeploy.Undeploy.taskColor",
       "label": "Task Color",
       "kind": "STRING",
       "description": "Task Color",
@@ -95,7 +95,7 @@
     },
     {
       "name": "iconLocation",
-      "fqn": "xldeploy.Deploy.iconLocation",
+      "fqn": "xldeploy.Undeploy.iconLocation",
       "label": "Icon Location",
       "kind": "STRING",
       "description": "Icon Location",
@@ -113,7 +113,7 @@
     },
     {
       "name": "server",
-      "fqn": "xldeploy.Deploy.server",
+      "fqn": "xldeploy.Undeploy.server",
       "label": "Server",
       "kind": "CI",
       "description": "XL Deploy server to connect to.",
@@ -130,7 +130,7 @@
     },
     {
       "name": "username",
-      "fqn": "xldeploy.Deploy.username",
+      "fqn": "xldeploy.Undeploy.username",
       "label": "Username",
       "kind": "STRING",
       "description": "Username to use when connecting to the XL Deploy server.",
@@ -147,7 +147,7 @@
     },
     {
       "name": "password",
-      "fqn": "xldeploy.Deploy.password",
+      "fqn": "xldeploy.Undeploy.password",
       "label": "Password",
       "kind": "STRING",
       "description": "Password to use when connecting to the XL Deploy server.",
@@ -164,7 +164,7 @@
     },
     {
       "name": "connectionFailureCount",
-      "fqn": "xldeploy.Deploy.connectionFailureCount",
+      "fqn": "xldeploy.Undeploy.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
       "description": "The number of times that the connection has failed.",
@@ -181,7 +181,7 @@
     },
     {
       "name": "scriptLocation",
-      "fqn": "xldeploy.Deploy.scriptLocation",
+      "fqn": "xldeploy.Undeploy.scriptLocation",
       "label": "Script Location",
       "kind": "STRING",
       "description": "Script Location",
@@ -194,12 +194,12 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "xlrxldeploy\/Deploy.py",
+      "default": "xlrxldeploy\/Undeploy.py",
       "hidden": true
     },
     {
       "name": "configurationUri",
-      "fqn": "xldeploy.Deploy.configurationUri",
+      "fqn": "xldeploy.Undeploy.configurationUri",
       "label": "Configuration Uri",
       "kind": "STRING",
       "description": "URI of the HTML file to render the task for custom script tasks",
@@ -212,32 +212,15 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "include\/xldeploy\/DeployTask\/xl-deploy-task-details.html",
+      "default": "include\/xldeploy\/UndeployTask\/xl-undeploy-task-details.html",
       "hidden": true
     },
     {
-      "name": "deploymentPackage",
-      "fqn": "xldeploy.Deploy.deploymentPackage",
-      "label": "Package",
+      "name": "deployedApplication",
+      "fqn": "xldeploy.Undeploy.deployedApplication",
+      "label": "Deployed app",
       "kind": "STRING",
-      "description": "Version of the application to be deployed. Auto-complete is supported in this field.",
-      "category": "input",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "deploymentEnvironment",
-      "fqn": "xldeploy.Deploy.deploymentEnvironment",
-      "label": "Environment",
-      "kind": "STRING",
-      "description": "Environment to deploy to. Auto-complete is supported in this field.",
+      "description": "Full Name of the deployed application. e.g. ProdEnv\/PetClinic",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -251,7 +234,7 @@
     },
     {
       "name": "rollbackOnFailure",
-      "fqn": "xldeploy.Deploy.rollbackOnFailure",
+      "fqn": "xldeploy.Undeploy.rollbackOnFailure",
       "label": "Rollback on Failure",
       "kind": "BOOLEAN",
       "description": "Rollback on failure controls whether or not the task is rolled back.",
@@ -268,7 +251,7 @@
     },
     {
       "name": "xlDeployTaskId",
-      "fqn": "xldeploy.Deploy.xlDeployTaskId",
+      "fqn": "xldeploy.Undeploy.xlDeployTaskId",
       "label": "Task ID",
       "kind": "STRING",
       "description": "The ID of the XL Deploy task triggered from this XL Release task.",

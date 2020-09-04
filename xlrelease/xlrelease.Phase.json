@@ -180,6 +180,23 @@
       "default": null
     },
     {
+      "name": "overdueNotified",
+      "fqn": "xlrelease.Phase.overdueNotified",
+      "label": "Overdue Notified",
+      "kind": "BOOLEAN",
+      "description": "Overdue Notified",
+      "category": "internal",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
+    },
+    {
       "name": "tasks",
       "fqn": "xlrelease.Phase.tasks",
       "label": "Tasks",

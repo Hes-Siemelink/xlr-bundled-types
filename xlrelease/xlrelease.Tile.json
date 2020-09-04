@@ -235,6 +235,24 @@
       "hidden": true
     },
     {
+      "name": "embedded",
+      "fqn": "xlrelease.Tile.embedded",
+      "label": "Embedded",
+      "kind": "BOOLEAN",
+      "description": "Render content inside the main page without using iframe element.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false,
+      "hidden": true
+    },
+    {
       "name": "variableMapping",
       "fqn": "xlrelease.Tile.variableMapping",
       "label": "Variable Mapping",

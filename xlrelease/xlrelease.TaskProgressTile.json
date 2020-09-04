@@ -284,6 +284,24 @@
       "referencedType": null,
       "default": "include\/TaskProgressTile\/config-tile.html",
       "hidden": true
+    },
+    {
+      "name": "embedded",
+      "fqn": "xlrelease.TaskProgressTile.embedded",
+      "label": "Embedded",
+      "kind": "BOOLEAN",
+      "description": "Render content inside the main page without using iframe element.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true,
+      "hidden": true
     }
   ],
   "superTypes": [

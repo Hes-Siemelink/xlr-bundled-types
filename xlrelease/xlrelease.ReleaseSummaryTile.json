@@ -250,6 +250,24 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": 0
+    },
+    {
+      "name": "embedded",
+      "fqn": "xlrelease.ReleaseSummaryTile.embedded",
+      "label": "Embedded",
+      "kind": "BOOLEAN",
+      "description": "Render content inside the main page without using iframe element.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true,
+      "hidden": true
     }
   ],
   "superTypes": [

@@ -140,6 +140,42 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "scriptLocation",
+      "fqn": "xldeploy.XLDeployServer.scriptLocation",
+      "label": "Script Location",
+      "kind": "STRING",
+      "description": "Script Location",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "xlrxldeploy\/XLDeployServer.py",
+      "hidden": true
+    },
+    {
+      "name": "verifySSL",
+      "fqn": "xldeploy.XLDeployServer.verifySSL",
+      "label": "Verify S S L",
+      "kind": "BOOLEAN",
+      "description": "Verify S S L",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true,
+      "hidden": true
     }
   ],
   "superTypes": [
