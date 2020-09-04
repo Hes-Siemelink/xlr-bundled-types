@@ -801,6 +801,23 @@
       "referencedType": null,
       "default": "SFTP",
       "hidden": true
+    },
+    {
+      "name": "remoteCharacterEncoding",
+      "fqn": "remoteScript.Zos.remoteCharacterEncoding",
+      "label": "Remote Character Encoding",
+      "kind": "STRING",
+      "description": "The character encoding used to transcode files from one connection to the other",
+      "category": "input",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "Cp1047"
     }
   ],
   "superTypes": [

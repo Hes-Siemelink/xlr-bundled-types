@@ -1,6 +1,6 @@
 {
   "type": "xlrelease.GroovyScriptTask",
-  "label": "Script: Groovy Script \/ Xfile",
+  "label": "Script: Groovy Script \/ Releasefile",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [

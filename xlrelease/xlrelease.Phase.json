@@ -272,6 +272,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "originId",
+      "fqn": "xlrelease.Phase.originId",
+      "label": "Origin Id",
+      "kind": "STRING",
+      "description": "If given, then this phase has been copied based on this id",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": [

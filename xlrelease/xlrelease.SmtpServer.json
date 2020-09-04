@@ -106,6 +106,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "testAddress",
+      "fqn": "xlrelease.SmtpServer.testAddress",
+      "label": "Test Address",
+      "kind": "STRING",
+      "description": "The email address where the test notification is sent. You can add multiple email addresses separated by commas.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": ["udm.BaseConfigurationItem"]

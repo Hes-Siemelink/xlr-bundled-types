@@ -250,6 +250,24 @@
       "default": null
     },
     {
+      "name": "remoteCharacterEncoding",
+      "fqn": "remoteScript.RemoteScript.remoteCharacterEncoding",
+      "label": "Remote Character Encoding",
+      "kind": "STRING",
+      "description": "The character encoding used to transcode files from one connection to the other",
+      "category": "input",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "UTF-8",
+      "hidden": true
+    },
+    {
       "name": "tmpDeleteOnDisconnect",
       "fqn": "remoteScript.RemoteScript.tmpDeleteOnDisconnect",
       "label": "Tmp Delete On Disconnect",
