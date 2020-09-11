@@ -39,6 +39,24 @@
       "default": null
     },
     {
+      "name": "boundConfigurationItems",
+      "fqn": "udm.BaseDeployedArtifact.boundConfigurationItems",
+      "label": "Bound Configuration Items",
+      "kind": "SET_OF_CI",
+      "description": "The set of created CIs.",
+      "category": "Provisioning",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": "udm.ConfigurationItem",
+      "default": null,
+      "hidden": true
+    },
+    {
       "name": "placeholders",
       "fqn": "udm.BaseDeployedArtifact.placeholders",
       "label": "Placeholders",

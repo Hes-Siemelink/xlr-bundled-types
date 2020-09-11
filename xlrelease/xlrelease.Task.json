@@ -536,6 +536,23 @@
       "default": false
     },
     {
+      "name": "locked",
+      "fqn": "xlrelease.Task.locked",
+      "label": "Locked",
+      "kind": "BOOLEAN",
+      "description": "The task is locked",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
+    },
+    {
       "name": "automated",
       "fqn": "xlrelease.Task.automated",
       "label": "Automated",

@@ -159,6 +159,40 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": "false"
+    },
+    {
+      "name": "templates",
+      "fqn": "udm.DeploymentPackage.templates",
+      "label": "Templates",
+      "kind": "SET_OF_CI",
+      "description": "The set of CI templates.",
+      "category": "Provisioning",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null
+    },
+    {
+      "name": "boundTemplates",
+      "fqn": "udm.DeploymentPackage.boundTemplates",
+      "label": "Bound Templates",
+      "kind": "SET_OF_CI",
+      "description": "The set of CI bound templates.",
+      "category": "Provisioning",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null
     }
   ],
   "superTypes": [

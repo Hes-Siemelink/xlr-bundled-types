@@ -5,6 +5,24 @@
   "description": "A folder artifact that can be deployed",
   "properties": [
     {
+      "name": "boundTemplates",
+      "fqn": "udm.BaseDeployableFolderArtifact.boundTemplates",
+      "label": "Bound Templates",
+      "kind": "SET_OF_CI",
+      "description": "The set of CI templates.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null,
+      "hidden": true
+    },
+    {
       "name": "tags",
       "fqn": "udm.BaseDeployableFolderArtifact.tags",
       "label": "Tags",

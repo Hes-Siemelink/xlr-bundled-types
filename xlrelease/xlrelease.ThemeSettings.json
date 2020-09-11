@@ -37,7 +37,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "#68b749"
+      "default": "GREEN"
     },
     {
       "name": "description",

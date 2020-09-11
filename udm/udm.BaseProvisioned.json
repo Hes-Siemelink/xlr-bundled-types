@@ -39,6 +39,23 @@
       "default": null
     },
     {
+      "name": "boundConfigurationItems",
+      "fqn": "udm.BaseProvisioned.boundConfigurationItems",
+      "label": "Bound Configuration Items",
+      "kind": "SET_OF_CI",
+      "description": "The set of created CIs.",
+      "category": "Provisioning",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.BaseConfigurationItem",
+      "default": null
+    },
+    {
       "name": "ordinal",
       "fqn": "udm.BaseProvisioned.ordinal",
       "label": "Ordinal",
@@ -71,23 +88,6 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": "udm.AppliedProvisioner",
-      "default": null
-    },
-    {
-      "name": "boundConfigurationItems",
-      "fqn": "udm.BaseProvisioned.boundConfigurationItems",
-      "label": "Bound Configuration Items",
-      "kind": "SET_OF_CI",
-      "description": "The set of created CIs.",
-      "category": "Provisioning",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": "udm.ConfigurationItem",
       "default": null
     }
   ],

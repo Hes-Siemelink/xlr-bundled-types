@@ -5,6 +5,23 @@
   "description": "Base type for all provisionables.",
   "properties": [
     {
+      "name": "boundTemplates",
+      "fqn": "udm.BaseProvisionable.boundTemplates",
+      "label": "Bound Templates",
+      "kind": "SET_OF_CI",
+      "description": "The set of CI templates.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null
+    },
+    {
       "name": "tags",
       "fqn": "udm.BaseProvisionable.tags",
       "label": "Tags",
@@ -38,23 +55,6 @@
       "referencedType": null,
       "default": "1",
       "hidden": true
-    },
-    {
-      "name": "boundTemplates",
-      "fqn": "udm.BaseProvisionable.boundTemplates",
-      "label": "Bound Templates",
-      "kind": "SET_OF_CI",
-      "description": "The set of CI templates.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": "udm.Template",
-      "default": null
     },
     {
       "name": "provisioners",

@@ -1,6 +1,6 @@
 {
   "type": "openshift.startBuild",
-  "label": "Openshift: Start Build",
+  "label": "OpenShift: Start Build",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
@@ -130,11 +130,11 @@
       "hidden": true
     },
     {
-      "name": "host",
-      "fqn": "openshift.startBuild.host",
-      "label": "Host",
+      "name": "client",
+      "fqn": "openshift.startBuild.client",
+      "label": "Client",
       "kind": "CI",
-      "description": "OC Client machine",
+      "description": "OC Client.",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -143,26 +143,8 @@
       "password": false,
       "transient": false,
       "size": "DEFAULT",
-      "referencedType": "host.Unix",
+      "referencedType": "openshift.client",
       "default": null
-    },
-    {
-      "name": "ocPath",
-      "fqn": "openshift.startBuild.ocPath",
-      "label": "Oc Path",
-      "kind": "STRING",
-      "description": "Complete path of the oc executable",
-      "category": "input",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "\/usr\/local\/bin\/oc",
-      "hidden": true
     },
     {
       "name": "scriptLocation",
