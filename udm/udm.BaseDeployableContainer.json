@@ -1,0 +1,64 @@
+{
+  "type": "udm.BaseDeployableContainer",
+  "label": "Udm: Base Deployable Container",
+  "virtual": true,
+  "description": "The base supertype for a deployable container.",
+  "properties": [
+    {
+      "name": "boundTemplates",
+      "fqn": "udm.BaseDeployableContainer.boundTemplates",
+      "label": "Bound Templates",
+      "kind": "SET_OF_CI",
+      "description": "The set of CI templates.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": "udm.Template",
+      "default": null,
+      "hidden": true
+    },
+    {
+      "name": "tags",
+      "fqn": "udm.BaseDeployableContainer.tags",
+      "label": "Tags",
+      "kind": "SET_OF_STRING",
+      "description": "If set, this deployable will only be mapped automatically to containers with the same tag.",
+      "category": "Deployment",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "containerTags",
+      "fqn": "udm.BaseDeployableContainer.containerTags",
+      "label": "Container Tags",
+      "kind": "SET_OF_STRING",
+      "description": "The tags to copy to the Deployed Container",
+      "category": "Deployment",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.BaseDeployable",
+    "udm.BaseConfigurationItem"
+  ]
+}

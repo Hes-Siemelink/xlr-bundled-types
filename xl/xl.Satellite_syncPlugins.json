@@ -1,0 +1,46 @@
+{
+  "type": "xl.Satellite_syncPlugins",
+  "label": "Xl: Satellite_sync Plugins",
+  "virtual": false,
+  "description": "Generated type for method syncPlugins.",
+  "properties": [
+    {
+      "name": "maxAttempts",
+      "fqn": "xl.Satellite_syncPlugins.maxAttempts",
+      "label": "Max Attempts",
+      "kind": "INTEGER",
+      "description": "Number of attempts to reach the satellite after restart.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 10
+    },
+    {
+      "name": "delay",
+      "fqn": "xl.Satellite_syncPlugins.delay",
+      "label": "Delay",
+      "kind": "INTEGER",
+      "description": "Delay between each attempt, in seconds.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 10
+    }
+  ],
+  "superTypes": [
+    "udm.Parameters",
+    "udm.BaseConfigurationItem"
+  ]
+}
