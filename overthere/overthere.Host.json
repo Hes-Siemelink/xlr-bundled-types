@@ -62,24 +62,6 @@
       ]
     },
     {
-      "name": "shell",
-      "fqn": "overthere.Host.shell",
-      "label": "Executable shell",
-      "kind": "STRING",
-      "description": "Executable shell program",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null,
-      "hidden": true
-    },
-    {
       "name": "temporaryDirectoryPath",
       "fqn": "overthere.Host.temporaryDirectoryPath",
       "label": "Temporary Directory Path",

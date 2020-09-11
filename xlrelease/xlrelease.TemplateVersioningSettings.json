@@ -1,0 +1,28 @@
+{
+  "type": "xlrelease.TemplateVersioningSettings",
+  "label": "Xlrelease: Template Versioning Settings",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "enableAutomatedVersioning",
+    "fqn": "xlrelease.TemplateVersioningSettings.enableAutomatedVersioning",
+    "label": "Is automated template versioning enabled",
+    "kind": "BOOLEAN",
+    "description": "Is automated template versioning enabled",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": false
+  }],
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

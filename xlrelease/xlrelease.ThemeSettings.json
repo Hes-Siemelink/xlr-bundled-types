@@ -1,0 +1,64 @@
+{
+  "type": "xlrelease.ThemeSettings",
+  "label": "Xlrelease: Theme Settings",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "headerName",
+      "fqn": "xlrelease.ThemeSettings.headerName",
+      "label": "Instance name",
+      "kind": "STRING",
+      "description": "Instance name",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "headerAccentColor",
+      "fqn": "xlrelease.ThemeSettings.headerAccentColor",
+      "label": "Header color",
+      "kind": "STRING",
+      "description": "Header color",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "#68b749"
+    },
+    {
+      "name": "description",
+      "fqn": "xlrelease.ThemeSettings.description",
+      "label": "Description",
+      "kind": "STRING",
+      "description": "Description",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}
