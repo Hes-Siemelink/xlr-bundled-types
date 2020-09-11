@@ -668,23 +668,6 @@
       "default": false
     },
     {
-      "name": "watchers",
-      "fqn": "xlrelease.ParallelGroup.watchers",
-      "label": "Watchers",
-      "kind": "SET_OF_STRING",
-      "description": "List of users watching this task",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
       "name": "automated",
       "fqn": "xlrelease.ParallelGroup.automated",
       "label": "Automated",
@@ -755,6 +738,23 @@
       "referencedType": null,
       "default": false,
       "hidden": true
+    },
+    {
+      "name": "watchers",
+      "fqn": "xlrelease.ParallelGroup.watchers",
+      "label": "Watchers",
+      "kind": "SET_OF_STRING",
+      "description": "List of users watching this task",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     },
     {
       "name": "tasks",

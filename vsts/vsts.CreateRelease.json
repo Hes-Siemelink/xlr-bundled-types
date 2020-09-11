@@ -1,12 +1,12 @@
 {
-  "type": "vsts.AddBuildTag",
-  "label": "VSTS\/TFS: Add Build Tag",
+  "type": "vsts.CreateRelease",
+  "label": "VSTS\/TFS: Create new release",
   "virtual": false,
-  "description": "Add a tag to you build",
+  "description": "Description unavailable",
   "properties": [
     {
       "name": "scriptLocation",
-      "fqn": "vsts.AddBuildTag.scriptLocation",
+      "fqn": "vsts.CreateRelease.scriptLocation",
       "label": "Script Location",
       "kind": "STRING",
       "description": "Script Location",
@@ -24,7 +24,7 @@
     },
     {
       "name": "customScriptTask",
-      "fqn": "vsts.AddBuildTag.customScriptTask",
+      "fqn": "vsts.CreateRelease.customScriptTask",
       "label": "Custom Script Task",
       "kind": "CI",
       "description": "Custom Script Task",
@@ -41,7 +41,7 @@
     },
     {
       "name": "configurationUri",
-      "fqn": "vsts.AddBuildTag.configurationUri",
+      "fqn": "vsts.CreateRelease.configurationUri",
       "label": "Configuration Uri",
       "kind": "STRING",
       "description": "URI of the HTML file to render the task for custom script tasks",
@@ -59,7 +59,7 @@
     },
     {
       "name": "maxOutputPropertySize",
-      "fqn": "vsts.AddBuildTag.maxOutputPropertySize",
+      "fqn": "vsts.CreateRelease.maxOutputPropertySize",
       "label": "Max Output Property Size",
       "kind": "INTEGER",
       "description": "Maximum size of output property values of type string. Default value is 32768",
@@ -77,7 +77,7 @@
     },
     {
       "name": "outputVarHelpText",
-      "fqn": "vsts.AddBuildTag.outputVarHelpText",
+      "fqn": "vsts.CreateRelease.outputVarHelpText",
       "label": "Output Var Help Text",
       "kind": "STRING",
       "description": "Output Var Help Text",
@@ -95,7 +95,7 @@
     },
     {
       "name": "preconditionEnabled",
-      "fqn": "vsts.AddBuildTag.preconditionEnabled",
+      "fqn": "vsts.CreateRelease.preconditionEnabled",
       "label": "Precondition Enabled",
       "kind": "BOOLEAN",
       "description": "Indicates whether preconditions should be enabled",
@@ -113,7 +113,7 @@
     },
     {
       "name": "failureHandlerEnabled",
-      "fqn": "vsts.AddBuildTag.failureHandlerEnabled",
+      "fqn": "vsts.CreateRelease.failureHandlerEnabled",
       "label": "Failure Handler Enabled",
       "kind": "BOOLEAN",
       "description": "Indicates whether failure handler should be enabled",
@@ -131,7 +131,7 @@
     },
     {
       "name": "iconLocation",
-      "fqn": "vsts.AddBuildTag.iconLocation",
+      "fqn": "vsts.CreateRelease.iconLocation",
       "label": "Icon Location",
       "kind": "STRING",
       "description": "Icon Location",
@@ -149,7 +149,7 @@
     },
     {
       "name": "taskColor",
-      "fqn": "vsts.AddBuildTag.taskColor",
+      "fqn": "vsts.CreateRelease.taskColor",
       "label": "Task Color",
       "kind": "STRING",
       "description": "Task Color",
@@ -167,7 +167,7 @@
     },
     {
       "name": "tfsServer",
-      "fqn": "vsts.AddBuildTag.tfsServer",
+      "fqn": "vsts.CreateRelease.tfsServer",
       "label": "Server",
       "kind": "CI",
       "description": "Server",
@@ -184,7 +184,7 @@
     },
     {
       "name": "overrideUsername",
-      "fqn": "vsts.AddBuildTag.overrideUsername",
+      "fqn": "vsts.CreateRelease.overrideUsername",
       "label": "Username",
       "kind": "STRING",
       "description": "Username",
@@ -201,7 +201,7 @@
     },
     {
       "name": "overridePassword",
-      "fqn": "vsts.AddBuildTag.overridePassword",
+      "fqn": "vsts.CreateRelease.overridePassword",
       "label": "Password\/Token",
       "kind": "STRING",
       "description": "Password\/Token",
@@ -218,7 +218,7 @@
     },
     {
       "name": "overrideDomain",
-      "fqn": "vsts.AddBuildTag.overrideDomain",
+      "fqn": "vsts.CreateRelease.overrideDomain",
       "label": "Domain",
       "kind": "STRING",
       "description": "Domain in case of NTLM authentication",
@@ -235,7 +235,7 @@
     },
     {
       "name": "teamProjectName",
-      "fqn": "vsts.AddBuildTag.teamProjectName",
+      "fqn": "vsts.CreateRelease.teamProjectName",
       "label": "Team Project Name",
       "kind": "STRING",
       "description": "Team Project Name",
@@ -251,11 +251,11 @@
       "default": null
     },
     {
-      "name": "buildId",
-      "fqn": "vsts.AddBuildTag.buildId",
-      "label": "Build Id",
+      "name": "releaseDefinitionName",
+      "fqn": "vsts.CreateRelease.releaseDefinitionName",
+      "label": "Release Definition Name",
       "kind": "STRING",
-      "description": "Build Id",
+      "description": "Name of the definition for which to start a new release",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -268,15 +268,32 @@
       "default": null
     },
     {
-      "name": "tags",
-      "fqn": "vsts.AddBuildTag.tags",
-      "label": "Tags",
-      "kind": "LIST_OF_STRING",
-      "description": "Tags",
+      "name": "releaseDescription",
+      "fqn": "vsts.CreateRelease.releaseDescription",
+      "label": "Release Description",
+      "kind": "STRING",
+      "description": "Release Description",
       "category": "input",
       "asContainment": false,
       "inspection": false,
       "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "releaseId",
+      "fqn": "vsts.CreateRelease.releaseId",
+      "label": "Release Id",
+      "kind": "INTEGER",
+      "description": "Release Id",
+      "category": "output",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
       "requiredInspection": false,
       "password": false,
       "transient": false,
