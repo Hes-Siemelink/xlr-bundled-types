@@ -293,7 +293,8 @@
         "ABORTED",
         "PRECONDITION_IN_PROGRESS",
         "WAITING_FOR_INPUT",
-        "FAILURE_HANDLER_IN_PROGRESS"
+        "FAILURE_HANDLER_IN_PROGRESS",
+        "FACET_CHECK_IN_PROGRESS"
       ]
     },
     {
@@ -650,6 +651,40 @@
       "default": false
     },
     {
+      "name": "checkAttributes",
+      "fqn": "xlrelease.SequentialGroup.checkAttributes",
+      "label": "Check Attributes",
+      "kind": "BOOLEAN",
+      "description": "Check attributes on task execution",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
+    },
+    {
+      "name": "watchers",
+      "fqn": "xlrelease.SequentialGroup.watchers",
+      "label": "Watchers",
+      "kind": "SET_OF_STRING",
+      "description": "List of users watching this task",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
       "name": "automated",
       "fqn": "xlrelease.SequentialGroup.automated",
       "label": "Automated",
@@ -720,23 +755,6 @@
       "referencedType": null,
       "default": false,
       "hidden": true
-    },
-    {
-      "name": "watchers",
-      "fqn": "xlrelease.SequentialGroup.watchers",
-      "label": "Watchers",
-      "kind": "SET_OF_STRING",
-      "description": "List of users watching this task",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
     },
     {
       "name": "tasks",

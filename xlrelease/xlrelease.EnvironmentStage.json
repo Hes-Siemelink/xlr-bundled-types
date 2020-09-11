@@ -1,0 +1,25 @@
+{
+  "type": "xlrelease.EnvironmentStage",
+  "label": "Xlrelease: Environment Stage",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "title",
+    "fqn": "xlrelease.EnvironmentStage.title",
+    "label": "Title",
+    "kind": "STRING",
+    "description": "Name of the stage",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

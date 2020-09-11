@@ -1,8 +1,8 @@
 {
   "type": "sonar.SonarSummaryTile",
-  "label": "Sonar Summary",
+  "label": "SonarQube analysis summary",
   "virtual": false,
-  "description": "Display the summary of various project metrics from Sonar",
+  "description": "Shows the metrics of the latest analysis.",
   "properties": [
     {
       "name": "description",
@@ -75,40 +75,6 @@
       "referencedType": null,
       "default": null,
       "hidden": true
-    },
-    {
-      "name": "width",
-      "fqn": "sonar.SonarSummaryTile.width",
-      "label": "Width",
-      "kind": "INTEGER",
-      "description": "Default width of this tile in number of dashboard columns it occupies",
-      "category": "gridConfiguration",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "height",
-      "fqn": "sonar.SonarSummaryTile.height",
-      "label": "Height",
-      "kind": "INTEGER",
-      "description": "Default height of this tile in number of dashboard rows it occupies",
-      "category": "gridConfiguration",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
     },
     {
       "name": "row",
@@ -248,7 +214,7 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "include\/SonarSummaryTile\/sonar-query-summary-view.html",
+      "default": "include\/SonarSummaryTile\/sonar-summary-tile-view.html",
       "hidden": true
     },
     {
@@ -266,8 +232,42 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "include\/SonarSummaryTile\/sonar-config-view.html",
+      "default": "include\/SonarSummaryTile\/sonar-summary-config-view.html",
       "hidden": true
+    },
+    {
+      "name": "width",
+      "fqn": "sonar.SonarSummaryTile.width",
+      "label": "Width",
+      "kind": "INTEGER",
+      "description": "Default width of this tile in number of dashboard columns it occupies",
+      "category": "gridConfiguration",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 2
+    },
+    {
+      "name": "height",
+      "fqn": "sonar.SonarSummaryTile.height",
+      "label": "Height",
+      "kind": "INTEGER",
+      "description": "Default height of this tile in number of dashboard rows it occupies",
+      "category": "gridConfiguration",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 2
     },
     {
       "name": "title",
@@ -284,7 +284,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "Sonar Summary"
+      "default": "SonarQube analysis summary"
     },
     {
       "name": "embedded",
@@ -302,6 +302,24 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": true,
+      "hidden": true
+    },
+    {
+      "name": "cacheKeys",
+      "fqn": "sonar.SonarSummaryTile.cacheKeys",
+      "label": "Cache Keys",
+      "kind": "SET_OF_STRING",
+      "description": "Cache Keys",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "[sonarServer, resource, metrics]",
       "hidden": true
     },
     {
@@ -367,10 +385,11 @@
       "required": true,
       "requiredInspection": false,
       "password": false,
-      "transient": false,
+      "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "[release, folder, global]"
+      "default": "[release, folder, global]",
+      "hidden": true
     }
   ],
   "superTypes": [

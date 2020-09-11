@@ -1,0 +1,63 @@
+{
+  "type": "xl.Satellite_restartSatellite",
+  "label": "Xl: Satellite_restart Satellite",
+  "virtual": false,
+  "description": "Generated type for method restartSatellite.",
+  "properties": [
+    {
+      "name": "force",
+      "fqn": "xl.Satellite_restartSatellite.force",
+      "label": "Force",
+      "kind": "BOOLEAN",
+      "description": "Modifies the restart behavior, so that running tasks are forcibly terminated. Should only be used when a satellite appears to be hanging, because it will cause active tasks to fail.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
+    },
+    {
+      "name": "maxAttempts",
+      "fqn": "xl.Satellite_restartSatellite.maxAttempts",
+      "label": "Max Attempts",
+      "kind": "INTEGER",
+      "description": "Number of attempts to reach the satellite after restart.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 10
+    },
+    {
+      "name": "delay",
+      "fqn": "xl.Satellite_restartSatellite.delay",
+      "label": "Delay",
+      "kind": "INTEGER",
+      "description": "Delay between each attempt, in seconds.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 10
+    }
+  ],
+  "superTypes": [
+    "udm.Parameters",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "xlrelease.ApplicationFilter",
+  "label": "ApplicationFilter",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "applicationId",
+    "fqn": "xlrelease.ApplicationFilter.applicationId",
+    "label": "Application Id",
+    "kind": "STRING",
+    "description": "The ID of the application to filter.",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": ""
+  }],
+  "superTypes": [
+    "xlrelease.ReportFilter",
+    "udm.BaseConfigurationItem"
+  ]
+}

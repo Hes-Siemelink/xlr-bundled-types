@@ -37,7 +37,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": 0
+      "default": 720
     },
     {
       "name": "archivingJobCronSchedule",
@@ -74,6 +74,23 @@
       "referencedType": null,
       "default": true,
       "hidden": true
+    },
+    {
+      "name": "preArchivingEnabled",
+      "fqn": "xlrelease.ArchivingSettings.preArchivingEnabled",
+      "label": "Enable pre-archiving",
+      "kind": "BOOLEAN",
+      "description": "Enable pre-archiving",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true
     },
     {
       "name": "searchPageSize",

@@ -1,0 +1,44 @@
+{
+  "type": "xlrelease.Application",
+  "label": "Xlrelease: Application",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.Application.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Name of the application",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "environments",
+      "fqn": "xlrelease.Application.environments",
+      "label": "Environments",
+      "kind": "LIST_OF_CI",
+      "description": "Environments attached to this application",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Environment",
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

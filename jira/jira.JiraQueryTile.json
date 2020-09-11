@@ -384,10 +384,11 @@
       "required": true,
       "requiredInspection": false,
       "password": false,
-      "transient": false,
+      "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "[global, folder, release]"
+      "default": "[global, folder, release]",
+      "hidden": true
     }
   ],
   "superTypes": [

@@ -123,6 +123,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": 0
+    },
+    {
+      "name": "lastActive",
+      "fqn": "xlrelease.UserProfile.lastActive",
+      "label": "Last Active",
+      "kind": "DATE",
+      "description": "Last time the system saw this user",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": ["udm.BaseConfigurationItem"]

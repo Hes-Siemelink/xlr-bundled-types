@@ -1,8 +1,8 @@
 {
   "type": "blackduck.BlackduckRiskProfileTile",
-  "label": "Blackduck Risk Profile",
+  "label": "BlackDuck risk profile",
   "virtual": false,
-  "description": "Display the security, license and operation risks of the project.",
+  "description": "Shows the security, license and operation risk of the project.",
   "properties": [
     {
       "name": "description",
@@ -93,40 +93,6 @@
       "referencedType": null,
       "default": null,
       "hidden": true
-    },
-    {
-      "name": "width",
-      "fqn": "blackduck.BlackduckRiskProfileTile.width",
-      "label": "Width",
-      "kind": "INTEGER",
-      "description": "Default width of this tile in number of dashboard columns it occupies",
-      "category": "gridConfiguration",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "height",
-      "fqn": "blackduck.BlackduckRiskProfileTile.height",
-      "label": "Height",
-      "kind": "INTEGER",
-      "description": "Default height of this tile in number of dashboard rows it occupies",
-      "category": "gridConfiguration",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
     },
     {
       "name": "row",
@@ -235,24 +201,6 @@
       "hidden": true
     },
     {
-      "name": "supportedScopes",
-      "fqn": "blackduck.BlackduckRiskProfileTile.supportedScopes",
-      "label": "Supported Scopes",
-      "kind": "LIST_OF_STRING",
-      "description": "Determines on which levels the tile can be used.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "[release]",
-      "hidden": true
-    },
-    {
       "name": "variableMapping",
       "fqn": "blackduck.BlackduckRiskProfileTile.variableMapping",
       "label": "Variable Mapping",
@@ -268,6 +216,40 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "width",
+      "fqn": "blackduck.BlackduckRiskProfileTile.width",
+      "label": "Width",
+      "kind": "INTEGER",
+      "description": "Default width of this tile in number of dashboard columns it occupies",
+      "category": "gridConfiguration",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 2
+    },
+    {
+      "name": "height",
+      "fqn": "blackduck.BlackduckRiskProfileTile.height",
+      "label": "Height",
+      "kind": "INTEGER",
+      "description": "Default height of this tile in number of dashboard rows it occupies",
+      "category": "gridConfiguration",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 2
     },
     {
       "name": "uri",
@@ -292,7 +274,7 @@
       "fqn": "blackduck.BlackduckRiskProfileTile.title",
       "label": "Title",
       "kind": "STRING",
-      "description": "Tile title",
+      "description": "Name of the tile",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -302,7 +284,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "Blackduck Hub Risk Profile"
+      "default": "BlackDuck risk profile"
     },
     {
       "name": "embedded",
@@ -327,7 +309,7 @@
       "fqn": "blackduck.BlackduckRiskProfileTile.blackduckServer",
       "label": "Server",
       "kind": "CI",
-      "description": "Blackduck server id to connect to",
+      "description": "BlackDuck server to connect with",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -342,9 +324,9 @@
     {
       "name": "projectName",
       "fqn": "blackduck.BlackduckRiskProfileTile.projectName",
-      "label": "Project Name",
+      "label": "Project",
       "kind": "STRING",
-      "description": "Name of project.",
+      "description": "Project to pull risks from",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -361,7 +343,7 @@
       "fqn": "blackduck.BlackduckRiskProfileTile.version",
       "label": "Version",
       "kind": "STRING",
-      "description": "Version of project",
+      "description": "Version to pull risks from",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -376,9 +358,9 @@
     {
       "name": "riskType",
       "fqn": "blackduck.BlackduckRiskProfileTile.riskType",
-      "label": "Risk Type",
+      "label": "Risk type",
       "kind": "ENUM",
-      "description": "Version of project",
+      "description": "Risk type to display on the chart",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -388,12 +370,30 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": null,
+      "default": "Security Risks",
       "enumValues": [
         "Security Risks",
         "License Risks",
         "Operational Risks"
       ]
+    },
+    {
+      "name": "supportedScopes",
+      "fqn": "blackduck.BlackduckRiskProfileTile.supportedScopes",
+      "label": "Supported Scopes",
+      "kind": "LIST_OF_STRING",
+      "description": "Determines on which levels the tile can be used.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "[release, folder, global]",
+      "hidden": true
     }
   ],
   "superTypes": [

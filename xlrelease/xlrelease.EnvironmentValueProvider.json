@@ -1,0 +1,49 @@
+{
+  "type": "xlrelease.EnvironmentValueProvider",
+  "label": "Environments",
+  "virtual": false,
+  "description": "Provides the list of all environments defined in XL Release.",
+  "properties": [
+    {
+      "name": "variable",
+      "fqn": "xlrelease.EnvironmentValueProvider.variable",
+      "label": "Variable",
+      "kind": "CI",
+      "description": "Variable",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Variable",
+      "default": null
+    },
+    {
+      "name": "scriptLocation",
+      "fqn": "xlrelease.EnvironmentValueProvider.scriptLocation",
+      "label": "Script Location",
+      "kind": "STRING",
+      "description": "Script Location",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "environment-management\/EnvironmentValueProvider.py",
+      "hidden": true
+    }
+  ],
+  "superTypes": [
+    "xlrelease.JythonProvider",
+    "xlrelease.ScriptValueProviderConfiguration",
+    "xlrelease.ValueProviderConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

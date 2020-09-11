@@ -1,0 +1,44 @@
+{
+  "type": "xlrelease.EnvironmentLabel",
+  "label": "Xlrelease: Environment Label",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.EnvironmentLabel.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Name of label",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "color",
+      "fqn": "xlrelease.EnvironmentLabel.color",
+      "label": "Color",
+      "kind": "STRING",
+      "description": "Color of label",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

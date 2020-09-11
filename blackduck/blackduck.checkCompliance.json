@@ -134,7 +134,7 @@
       "fqn": "blackduck.checkCompliance.blackduckServer",
       "label": "Server",
       "kind": "CI",
-      "description": "Blackduck server id to connect to.",
+      "description": "BlackDuck server to connect with",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -149,9 +149,9 @@
     {
       "name": "projectName",
       "fqn": "blackduck.checkCompliance.projectName",
-      "label": "Project Name",
+      "label": "Project",
       "kind": "STRING",
-      "description": "Name of project.",
+      "description": "Project to pull risks from",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -202,9 +202,9 @@
     {
       "name": "versionName",
       "fqn": "blackduck.checkCompliance.versionName",
-      "label": "Version Name",
+      "label": "Version",
       "kind": "STRING",
-      "description": "Version of project.",
+      "description": "Version to pull risks from",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -219,7 +219,7 @@
     {
       "name": "securityRiskHighThreshold",
       "fqn": "blackduck.checkCompliance.securityRiskHighThreshold",
-      "label": "Security Risk (High)",
+      "label": "Security risk (High)",
       "kind": "INTEGER",
       "description": "High",
       "category": "input",
@@ -236,7 +236,7 @@
     {
       "name": "securityRiskMediumThreshold",
       "fqn": "blackduck.checkCompliance.securityRiskMediumThreshold",
-      "label": "Security Risk (Medium)",
+      "label": "Security risk (Medium)",
       "kind": "INTEGER",
       "description": "Medium",
       "category": "input",
@@ -253,7 +253,7 @@
     {
       "name": "securityRiskLowThreshold",
       "fqn": "blackduck.checkCompliance.securityRiskLowThreshold",
-      "label": "Security Risk (Low)",
+      "label": "Security risk (Low)",
       "kind": "INTEGER",
       "description": "Low",
       "category": "input",
@@ -270,7 +270,7 @@
     {
       "name": "licenseRiskHighThreshold",
       "fqn": "blackduck.checkCompliance.licenseRiskHighThreshold",
-      "label": "License Risk (High)",
+      "label": "License risk (High)",
       "kind": "INTEGER",
       "description": "High",
       "category": "input",
@@ -287,7 +287,7 @@
     {
       "name": "licenseRiskMediumThreshold",
       "fqn": "blackduck.checkCompliance.licenseRiskMediumThreshold",
-      "label": "License Risk (Medium)",
+      "label": "License risk (Medium)",
       "kind": "INTEGER",
       "description": "Medium",
       "category": "input",
@@ -304,7 +304,7 @@
     {
       "name": "licenseRiskLowThreshold",
       "fqn": "blackduck.checkCompliance.licenseRiskLowThreshold",
-      "label": "License Risk (Low)",
+      "label": "License risk (Low)",
       "kind": "INTEGER",
       "description": "Low",
       "category": "input",
@@ -321,7 +321,7 @@
     {
       "name": "operationalRiskHighThreshold",
       "fqn": "blackduck.checkCompliance.operationalRiskHighThreshold",
-      "label": "Operational Risk (High)",
+      "label": "Operational risk (High)",
       "kind": "INTEGER",
       "description": "High",
       "category": "input",
@@ -338,7 +338,7 @@
     {
       "name": "operationalRiskMediumThreshold",
       "fqn": "blackduck.checkCompliance.operationalRiskMediumThreshold",
-      "label": "Operational Risk (Medium)",
+      "label": "Operational risk (Medium)",
       "kind": "INTEGER",
       "description": "Medium",
       "category": "input",
@@ -355,7 +355,7 @@
     {
       "name": "operationalRiskLowThreshold",
       "fqn": "blackduck.checkCompliance.operationalRiskLowThreshold",
-      "label": "Operational Risk (Low)",
+      "label": "Operational risk (Low)",
       "kind": "INTEGER",
       "description": "Low",
       "category": "input",

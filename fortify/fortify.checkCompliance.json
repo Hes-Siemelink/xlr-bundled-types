@@ -152,7 +152,7 @@
       "fqn": "fortify.checkCompliance.fortifyServer",
       "label": "Server",
       "kind": "CI",
-      "description": "Fortify server id to connect to.",
+      "description": "Fortify SSC server to connect with",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -167,9 +167,9 @@
     {
       "name": "projectName",
       "fqn": "fortify.checkCompliance.projectName",
-      "label": "Project Name",
+      "label": "Application",
       "kind": "STRING",
-      "description": "Name of the project to pull metrics for.",
+      "description": "Application to pull metrics from",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -184,9 +184,9 @@
     {
       "name": "projectVersion",
       "fqn": "fortify.checkCompliance.projectVersion",
-      "label": "Project Version",
+      "label": "Version",
       "kind": "STRING",
-      "description": "Version of the project to pull metrics for.",
+      "description": "Version to pull metrics from",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -201,9 +201,9 @@
     {
       "name": "minimumStarRating",
       "fqn": "fortify.checkCompliance.minimumStarRating",
-      "label": "Minimum Security Rating",
+      "label": "Minimum security rating",
       "kind": "INTEGER",
-      "description": "Minimum Five Star Assessment Rating required for compliance check to pass.",
+      "description": "Minimum assessment rating required for compliance check to pass",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -230,7 +230,7 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "fortify\/task\/check_compliance.py",
+      "default": "fortify\/task\/CheckCompliance.py",
       "hidden": true
     }
   ],

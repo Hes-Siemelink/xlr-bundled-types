@@ -1,6 +1,6 @@
 {
   "type": "fortify.Server",
-  "label": "Fortify: Server",
+  "label": "Fortify SSC: Server",
   "virtual": false,
   "root": "Configuration",
   "description": "Description unavailable",

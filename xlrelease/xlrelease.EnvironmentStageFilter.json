@@ -1,0 +1,28 @@
+{
+  "type": "xlrelease.EnvironmentStageFilter",
+  "label": "EnvironmentStageFilter",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "environmentStageId",
+    "fqn": "xlrelease.EnvironmentStageFilter.environmentStageId",
+    "label": "Environment Stage Id",
+    "kind": "STRING",
+    "description": "The ID of the environment stage to filter.",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": ""
+  }],
+  "superTypes": [
+    "xlrelease.ReportFilter",
+    "udm.BaseConfigurationItem"
+  ]
+}
