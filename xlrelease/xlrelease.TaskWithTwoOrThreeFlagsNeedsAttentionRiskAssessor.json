@@ -70,7 +70,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "amber-flag"
+      "default": "xl-icon flag-attention-icon"
     },
     {
       "name": "score",

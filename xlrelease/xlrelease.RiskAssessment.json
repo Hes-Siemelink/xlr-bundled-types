@@ -88,6 +88,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "icon",
+      "fqn": "xlrelease.RiskAssessment.icon",
+      "label": "Icon",
+      "kind": "STRING",
+      "description": "Custom icon url that overrides icon from standard assessor icon set.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": [

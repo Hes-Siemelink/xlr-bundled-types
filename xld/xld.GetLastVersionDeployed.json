@@ -1,8 +1,8 @@
 {
   "type": "xld.GetLastVersionDeployed",
-  "label": "XL Deploy: Get last deployed version",
+  "label": "XL Deploy: Get Last Deployed Version",
   "virtual": false,
-  "description": "Finds the latest version of the Package deployed in XL Deploy",
+  "description": "Finds the latest version of the package deployed in XL Deploy.",
   "properties": [
     {
       "name": "customScriptTask",
@@ -203,7 +203,7 @@
       "fqn": "xld.GetLastVersionDeployed.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
-      "description": "The number of times that the connection has failed.",
+      "description": "Number of times that the connection has failed.",
       "category": "script",
       "asContainment": false,
       "inspection": false,

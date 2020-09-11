@@ -1,0 +1,81 @@
+{
+  "type": "xlrelease.CustomLogoSettings",
+  "label": "Xlrelease: Custom Logo Settings",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Logo file (26*26px)",
+  "properties": [
+    {
+      "name": "folderId",
+      "fqn": "xlrelease.CustomLogoSettings.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "FOLDER_CONFIG",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "filename",
+      "fqn": "xlrelease.CustomLogoSettings.filename",
+      "label": "Filename",
+      "kind": "STRING",
+      "description": "Filename",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "contentType",
+      "fqn": "xlrelease.CustomLogoSettings.contentType",
+      "label": "Content Type",
+      "kind": "STRING",
+      "description": "Content Type",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "content",
+      "fqn": "xlrelease.CustomLogoSettings.content",
+      "label": "Content",
+      "kind": "STRING",
+      "description": "Content",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

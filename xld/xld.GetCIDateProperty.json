@@ -1,12 +1,12 @@
 {
-  "type": "xld.AddCITag",
-  "label": "XL Deploy CI: Add CI Tag",
+  "type": "xld.GetCIDateProperty",
+  "label": "XL Deploy CI: Get CI date property",
   "virtual": false,
-  "description": "Description unavailable",
+  "description": "Get a date property from a CI.",
   "properties": [
     {
       "name": "customScriptTask",
-      "fqn": "xld.AddCITag.customScriptTask",
+      "fqn": "xld.GetCIDateProperty.customScriptTask",
       "label": "Custom Script Task",
       "kind": "CI",
       "description": "Custom Script Task",
@@ -23,7 +23,7 @@
     },
     {
       "name": "configurationUri",
-      "fqn": "xld.AddCITag.configurationUri",
+      "fqn": "xld.GetCIDateProperty.configurationUri",
       "label": "Configuration Uri",
       "kind": "STRING",
       "description": "URI of the HTML file to render the task for custom script tasks",
@@ -41,7 +41,7 @@
     },
     {
       "name": "maxOutputPropertySize",
-      "fqn": "xld.AddCITag.maxOutputPropertySize",
+      "fqn": "xld.GetCIDateProperty.maxOutputPropertySize",
       "label": "Max Output Property Size",
       "kind": "INTEGER",
       "description": "Maximum size of output property values of type string. Default value is 32768",
@@ -59,7 +59,7 @@
     },
     {
       "name": "outputVarHelpText",
-      "fqn": "xld.AddCITag.outputVarHelpText",
+      "fqn": "xld.GetCIDateProperty.outputVarHelpText",
       "label": "Output Var Help Text",
       "kind": "STRING",
       "description": "Output Var Help Text",
@@ -77,7 +77,7 @@
     },
     {
       "name": "preconditionEnabled",
-      "fqn": "xld.AddCITag.preconditionEnabled",
+      "fqn": "xld.GetCIDateProperty.preconditionEnabled",
       "label": "Precondition Enabled",
       "kind": "BOOLEAN",
       "description": "Indicates whether preconditions should be enabled",
@@ -95,7 +95,7 @@
     },
     {
       "name": "failureHandlerEnabled",
-      "fqn": "xld.AddCITag.failureHandlerEnabled",
+      "fqn": "xld.GetCIDateProperty.failureHandlerEnabled",
       "label": "Failure Handler Enabled",
       "kind": "BOOLEAN",
       "description": "Indicates whether failure handler should be enabled",
@@ -113,7 +113,7 @@
     },
     {
       "name": "taskColor",
-      "fqn": "xld.AddCITag.taskColor",
+      "fqn": "xld.GetCIDateProperty.taskColor",
       "label": "Task Color",
       "kind": "STRING",
       "description": "Task Color",
@@ -131,7 +131,7 @@
     },
     {
       "name": "iconLocation",
-      "fqn": "xld.AddCITag.iconLocation",
+      "fqn": "xld.GetCIDateProperty.iconLocation",
       "label": "Icon Location",
       "kind": "STRING",
       "description": "Icon Location",
@@ -149,7 +149,7 @@
     },
     {
       "name": "server",
-      "fqn": "xld.AddCITag.server",
+      "fqn": "xld.GetCIDateProperty.server",
       "label": "Server",
       "kind": "CI",
       "description": "XL Deploy server to connect to.",
@@ -166,7 +166,7 @@
     },
     {
       "name": "username",
-      "fqn": "xld.AddCITag.username",
+      "fqn": "xld.GetCIDateProperty.username",
       "label": "Username",
       "kind": "STRING",
       "description": "Username to use when connecting to the XL Deploy server.",
@@ -183,7 +183,7 @@
     },
     {
       "name": "password",
-      "fqn": "xld.AddCITag.password",
+      "fqn": "xld.GetCIDateProperty.password",
       "label": "Password",
       "kind": "STRING",
       "description": "Password to use when connecting to the XL Deploy server.",
@@ -200,7 +200,7 @@
     },
     {
       "name": "connectionFailureCount",
-      "fqn": "xld.AddCITag.connectionFailureCount",
+      "fqn": "xld.GetCIDateProperty.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
       "description": "Number of times that the connection has failed.",
@@ -217,7 +217,7 @@
     },
     {
       "name": "scriptLocation",
-      "fqn": "xld.AddCITag.scriptLocation",
+      "fqn": "xld.GetCIDateProperty.scriptLocation",
       "label": "Script Location",
       "kind": "STRING",
       "description": "Script Location",
@@ -230,15 +230,15 @@
       "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "xlrxldeploy\/tags\/AddCITag.py",
+      "default": "xlrxldeploy\/ci\/GetProperty.py",
       "hidden": true
     },
     {
-      "name": "xldCI",
-      "fqn": "xld.AddCITag.xldCI",
-      "label": "XL Deploy CI",
+      "name": "ciID",
+      "fqn": "xld.GetCIDateProperty.ciID",
+      "label": "CI ID",
       "kind": "STRING",
-      "description": "ID of the configuration item on which to add tags.",
+      "description": "Fully qualified Configuration Item ID to read.",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -251,11 +251,11 @@
       "default": null
     },
     {
-      "name": "xldNewTag",
-      "fqn": "xld.AddCITag.xldNewTag",
-      "label": "XL Deploy New Tag",
+      "name": "ciPropertyName",
+      "fqn": "xld.GetCIDateProperty.ciPropertyName",
+      "label": "Property name",
       "kind": "STRING",
-      "description": "A new tag to add to the configuration item.",
+      "description": "Name of the property to read.",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -268,15 +268,15 @@
       "default": null
     },
     {
-      "name": "xldTags",
-      "fqn": "xld.AddCITag.xldTags",
-      "label": "XL Deploy Tags",
-      "kind": "LIST_OF_STRING",
-      "description": "XL Deploy Tags",
+      "name": "ciPropertyValue",
+      "fqn": "xld.GetCIDateProperty.ciPropertyValue",
+      "label": "Property value",
+      "kind": "DATE",
+      "description": "Value of the property read.",
       "category": "output",
       "asContainment": false,
       "inspection": false,
-      "required": true,
+      "required": false,
       "requiredInspection": false,
       "password": false,
       "transient": false,

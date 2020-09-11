@@ -1,6 +1,6 @@
 {
   "type": "xld.cliUrl",
-  "label": "XL Deploy CLI: Run script from url",
+  "label": "XL Deploy CLI: Run Script from URL",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
@@ -152,7 +152,7 @@
       "fqn": "xld.cliUrl.cli",
       "label": "XL Deploy CLI",
       "kind": "CI",
-      "description": "XL Deploy CLI to connect to.",
+      "description": "XL Deploy command-line interface to connect to.",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -221,7 +221,7 @@
       "fqn": "xld.cliUrl.scriptUrl",
       "label": "Script Url",
       "kind": "STRING",
-      "description": "The URL of the script file to be run on XL Deploy CLI.",
+      "description": "URL of the script file to run on the XL Deploy command-line interface.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

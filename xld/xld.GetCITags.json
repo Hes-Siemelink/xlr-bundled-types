@@ -1,6 +1,6 @@
 {
   "type": "xld.GetCITags",
-  "label": "XL Deploy: Get CI Tags",
+  "label": "XL Deploy CI: Get CI Tags",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
@@ -203,7 +203,7 @@
       "fqn": "xld.GetCITags.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
-      "description": "The number of times that the connection has failed.",
+      "description": "Number of times that the connection has failed.",
       "category": "script",
       "asContainment": false,
       "inspection": false,
@@ -238,7 +238,7 @@
       "fqn": "xld.GetCITags.xldCI",
       "label": "XL Deploy CI",
       "kind": "STRING",
-      "description": "Configuration Item ID for which tags are required",
+      "description": "Configuration item ID for which tags are required.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

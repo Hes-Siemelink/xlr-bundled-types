@@ -159,6 +159,23 @@
       "size": "DEFAULT",
       "referencedType": "credentials.Credentials",
       "default": null
+    },
+    {
+      "name": "proxySettings",
+      "fqn": "udm.EmbeddedDeployableArtifact.proxySettings",
+      "label": "Proxy Settings",
+      "kind": "CI",
+      "description": "Credentials",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "credentials.ProxySettings",
+      "default": null
     }
   ],
   "superTypes": [

@@ -1,8 +1,8 @@
 {
   "type": "xld.GetAllVersions",
-  "label": "XL Deploy: Get all versions",
+  "label": "XL Deploy: Get All Versions",
   "virtual": false,
-  "description": "Finds all Deployment Package versions for an Application in XL Deploy",
+  "description": "Finds all deployment package versions for an application in XL Deploy.",
   "properties": [
     {
       "name": "customScriptTask",
@@ -203,7 +203,7 @@
       "fqn": "xld.GetAllVersions.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
-      "description": "The number of times that the connection has failed.",
+      "description": "Number of times that the connection has failed.",
       "category": "script",
       "asContainment": false,
       "inspection": false,
@@ -255,7 +255,7 @@
       "fqn": "xld.GetAllVersions.throwOnFail",
       "label": "Throw on Fail",
       "kind": "BOOLEAN",
-      "description": "If True, the Task will fail if the CI doesn't exist",
+      "description": "Enable to fail the task if the configuration item does not exist.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

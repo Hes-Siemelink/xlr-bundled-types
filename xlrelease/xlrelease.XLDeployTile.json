@@ -2,7 +2,7 @@
   "type": "xlrelease.XLDeployTile",
   "label": "XL Deploy tile",
   "virtual": false,
-  "description": "Display information on deployments started in the release.",
+  "description": "Display information about deployments started in the release.",
   "properties": [
     {
       "name": "description",

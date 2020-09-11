@@ -1,6 +1,6 @@
 {
   "type": "xld.cliFile",
-  "label": "XL Deploy CLI: Run script from file",
+  "label": "XL Deploy CLI: Run Script from File",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
@@ -152,7 +152,7 @@
       "fqn": "xld.cliFile.cli",
       "label": "XL Deploy CLI",
       "kind": "CI",
-      "description": "XL Deploy CLI to connect to.",
+      "description": "XL Deploy command-line interface to connect to.",
       "category": "input",
       "asContainment": false,
       "inspection": false,
@@ -221,7 +221,7 @@
       "fqn": "xld.cliFile.script",
       "label": "Script",
       "kind": "STRING",
-      "description": "The location of the script file to be run on XL Deploy CLI.",
+      "description": "Location of the script file to run on the XL Deploy command-line interface.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

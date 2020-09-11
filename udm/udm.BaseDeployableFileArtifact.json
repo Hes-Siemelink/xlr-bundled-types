@@ -211,6 +211,23 @@
       "size": "DEFAULT",
       "referencedType": "credentials.Credentials",
       "default": null
+    },
+    {
+      "name": "proxySettings",
+      "fqn": "udm.BaseDeployableFileArtifact.proxySettings",
+      "label": "Proxy Settings",
+      "kind": "CI",
+      "description": "Proxy Settings for artifact location",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "credentials.ProxySettings",
+      "default": null
     }
   ],
   "superTypes": [

@@ -139,6 +139,27 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": false
+    },
+    {
+      "name": "onSuccessPolicy",
+      "fqn": "udm.DeployedApplication.onSuccessPolicy",
+      "label": "On Success Policy",
+      "kind": "ENUM",
+      "description": "On task success policy.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "NOOP",
+      "enumValues": [
+        "NOOP",
+        "ARCHIVE"
+      ]
     }
   ],
   "superTypes": ["udm.BaseConfigurationItem"]

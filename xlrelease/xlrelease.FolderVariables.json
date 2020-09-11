@@ -1,0 +1,25 @@
+{
+  "type": "xlrelease.FolderVariables",
+  "label": "Xlrelease: Folder Variables",
+  "virtual": false,
+  "root": "Applications",
+  "description": "Folder variable container",
+  "properties": [{
+    "name": "variables",
+    "fqn": "xlrelease.FolderVariables.variables",
+    "label": "Variables",
+    "kind": "LIST_OF_CI",
+    "description": "List of folder variable CIs",
+    "category": "Common",
+    "asContainment": true,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "xlrelease.Variable",
+    "default": null
+  }],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

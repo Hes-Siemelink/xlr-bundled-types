@@ -1,8 +1,8 @@
 {
   "type": "xld.UpdateCIProperty",
-  "label": "XL Deploy: Update CI property",
+  "label": "XL Deploy CI: Update CI Property",
   "virtual": false,
-  "description": "Update a property from a CI",
+  "description": "Update a property from a CI.",
   "properties": [
     {
       "name": "customScriptTask",
@@ -203,7 +203,7 @@
       "fqn": "xld.UpdateCIProperty.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
-      "description": "The number of times that the connection has failed.",
+      "description": "Number of times that the connection has failed.",
       "category": "script",
       "asContainment": false,
       "inspection": false,
@@ -238,7 +238,7 @@
       "fqn": "xld.UpdateCIProperty.ciID",
       "label": "CI ID",
       "kind": "STRING",
-      "description": "Fully qualified Configuration Item ID to update.",
+      "description": "Fully qualified configuration item ID to update.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

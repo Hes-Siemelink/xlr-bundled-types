@@ -1,6 +1,6 @@
 {
   "type": "xlrelease.TaskTimeSpentTile",
-  "label": "Time spent per task",
+  "label": "Time spent by task category",
   "virtual": false,
   "description": "Filter based on the time spent executing automated and manual tasks.",
   "properties": [
@@ -285,7 +285,7 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "Time spent per task"
+      "default": "Time spent by task category"
     },
     {
       "name": "dataSource",

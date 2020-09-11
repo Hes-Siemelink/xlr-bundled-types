@@ -161,6 +161,23 @@
       "default": null
     },
     {
+      "name": "proxySettings",
+      "fqn": "udm.BaseProvisionerArtifact.proxySettings",
+      "label": "Proxy Settings",
+      "kind": "CI",
+      "description": "Credentials",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "credentials.ProxySettings",
+      "default": null
+    },
+    {
       "name": "hostTemplate",
       "fqn": "udm.BaseProvisionerArtifact.hostTemplate",
       "label": "Host Template",

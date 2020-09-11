@@ -2,7 +2,7 @@
   "type": "xld.DeleteInfrastructure",
   "label": "XL Deploy: Delete Infrastructure",
   "virtual": false,
-  "description": "Deletes specified Infrastructure and all deployed dependencies.",
+  "description": "Deletes specified infrastructure and all deployed dependencies.",
   "properties": [
     {
       "name": "customScriptTask",
@@ -185,7 +185,7 @@
       "fqn": "xld.DeleteInfrastructure.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
-      "description": "The number of times that the connection has failed.",
+      "description": "Number of times that the connection has failed.",
       "category": "script",
       "asContainment": false,
       "inspection": false,
@@ -238,7 +238,7 @@
       "fqn": "xld.DeleteInfrastructure.ci_id",
       "label": "Infrastructure ID",
       "kind": "STRING",
-      "description": "Infrastructure ID to delete.",
+      "description": "ID of the infrastructure to delete.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

@@ -296,11 +296,10 @@
       "required": false,
       "requiredInspection": false,
       "password": false,
-      "transient": true,
+      "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "\/usr\/bin\/ansible-playbook",
-      "hidden": true
+      "default": "\/usr\/bin\/ansible-playbook"
     },
     {
       "name": "output",

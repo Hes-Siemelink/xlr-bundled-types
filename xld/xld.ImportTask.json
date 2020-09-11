@@ -2,7 +2,7 @@
   "type": "xld.ImportTask",
   "label": "XL Deploy: Import package",
   "virtual": false,
-  "description": "Imports a package from a remote URL",
+  "description": "Imports a package from a remote URL.",
   "properties": [
     {
       "name": "customScriptTask",
@@ -203,7 +203,7 @@
       "fqn": "xld.ImportTask.connectionFailureCount",
       "label": "Connection Failure Count",
       "kind": "INTEGER",
-      "description": "The number of times that the connection has failed.",
+      "description": "Number of times that the connection has failed.",
       "category": "script",
       "asContainment": false,
       "inspection": false,
@@ -238,7 +238,7 @@
       "fqn": "xld.ImportTask.repositoryUrl",
       "label": "Repository URL",
       "kind": "STRING",
-      "description": "URL of the artifact repository from which the package needs to be imported.",
+      "description": "URL of the artifact repository from which to import the package.",
       "category": "input",
       "asContainment": false,
       "inspection": false,

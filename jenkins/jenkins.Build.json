@@ -187,7 +187,7 @@
       "fqn": "jenkins.Build.username",
       "label": "Username",
       "kind": "STRING",
-      "description": "Overrides the password used to connect to the server",
+      "description": "Overrides the username used to connect to the server",
       "category": "input",
       "asContainment": false,
       "inspection": false,

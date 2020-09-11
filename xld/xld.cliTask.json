@@ -170,7 +170,7 @@
       "fqn": "xld.cliTask.cli",
       "label": "XL Deploy CLI",
       "kind": "CI",
-      "description": "XL Deploy CLI to connect to.",
+      "description": "XL Deploy command-line interface to connect to.",
       "category": "input",
       "asContainment": false,
       "inspection": false,
