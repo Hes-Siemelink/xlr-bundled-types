@@ -54,6 +54,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "creationDate",
+      "fqn": "xlrelease.Comment.creationDate",
+      "label": "Creation Date",
+      "kind": "DATE",
+      "description": "Creation Date",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     }
   ],
   "superTypes": ["udm.BaseConfigurationItem"]

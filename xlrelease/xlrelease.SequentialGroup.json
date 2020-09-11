@@ -231,6 +231,23 @@
       "default": null
     },
     {
+      "name": "facets",
+      "fqn": "xlrelease.SequentialGroup.facets",
+      "label": "Facets",
+      "kind": "LIST_OF_CI",
+      "description": "Facets applied to the task.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Facet",
+      "default": null
+    },
+    {
       "name": "attachments",
       "fqn": "xlrelease.SequentialGroup.attachments",
       "label": "Attachments",

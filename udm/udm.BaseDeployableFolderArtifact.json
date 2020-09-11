@@ -194,6 +194,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "credentials",
+      "fqn": "udm.BaseDeployableFolderArtifact.credentials",
+      "label": "Credentials",
+      "kind": "CI",
+      "description": "Credentials of the URI.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "credentials.Credentials",
+      "default": null
     }
   ],
   "superTypes": [

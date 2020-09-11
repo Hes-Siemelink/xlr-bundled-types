@@ -217,24 +217,6 @@
       "hidden": true
     },
     {
-      "name": "supportedScopes",
-      "fqn": "fortify.FortifySummaryTile.supportedScopes",
-      "label": "Supported Scopes",
-      "kind": "LIST_OF_STRING",
-      "description": "Determines on which levels the tile can be used.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "[release]",
-      "hidden": true
-    },
-    {
       "name": "variableMapping",
       "fqn": "fortify.FortifySummaryTile.variableMapping",
       "label": "Variable Mapping",
@@ -389,6 +371,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "supportedScopes",
+      "fqn": "fortify.FortifySummaryTile.supportedScopes",
+      "label": "Supported Scopes",
+      "kind": "LIST_OF_STRING",
+      "description": "Determines on which levels the tile can be used.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "[release, folder, global]"
     }
   ],
   "superTypes": [

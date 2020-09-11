@@ -1,33 +1,16 @@
 {
-  "type": "xlrelease.ReleaseStatusRiskAssessor",
-  "label": "ReleaseStatusAssessor",
-  "virtual": false,
+  "type": "xlrelease.PropertyConfiguration",
+  "label": "Xlrelease: Property Configuration",
+  "virtual": true,
   "description": "Description unavailable",
   "properties": [
     {
-      "name": "title",
-      "fqn": "xlrelease.ReleaseStatusRiskAssessor.title",
-      "label": "Title",
+      "name": "folderId",
+      "fqn": "xlrelease.PropertyConfiguration.folderId",
+      "label": "Folder Id",
       "kind": "STRING",
-      "description": "The title of the item.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "description",
-      "fqn": "xlrelease.ReleaseStatusRiskAssessor.description",
-      "label": "Description",
-      "kind": "STRING",
-      "description": "The description of the item.",
-      "category": "Common",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "FOLDER_CONFIG",
       "asContainment": false,
       "inspection": false,
       "required": false,
@@ -39,11 +22,11 @@
       "default": null
     },
     {
-      "name": "weight",
-      "fqn": "xlrelease.ReleaseStatusRiskAssessor.weight",
-      "label": "Weight",
-      "kind": "INTEGER",
-      "description": "The weight of the assessor in the total calculation",
+      "name": "title",
+      "fqn": "xlrelease.PropertyConfiguration.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Symbolic name for the configuration",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -53,11 +36,30 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": 1
+      "default": null
+    },
+    {
+      "name": "cardinality",
+      "fqn": "xlrelease.PropertyConfiguration.cardinality",
+      "label": "Cardinality",
+      "kind": "INTEGER",
+      "description": "Cardinality",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 1,
+      "hidden": true
     }
   ],
   "superTypes": [
-    "xlrelease.RiskAssessor",
+    "xlrelease.Configuration",
+    "xlrelease.BaseConfiguration",
     "udm.BaseConfigurationItem"
   ]
 }

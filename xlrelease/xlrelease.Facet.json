@@ -1,0 +1,62 @@
+{
+  "type": "xlrelease.Facet",
+  "label": "Xlrelease: Facet",
+  "virtual": true,
+  "description": "Base facet class used to augment other CIs (tasks only currently)",
+  "properties": [
+    {
+      "name": "scope",
+      "fqn": "xlrelease.Facet.scope",
+      "label": "Scope",
+      "kind": "ENUM",
+      "description": "CI kind to which the facet can be applied.",
+      "category": "internal",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "TASK",
+      "enumValues": ["TASK"],
+      "hidden": true
+    },
+    {
+      "name": "targetId",
+      "fqn": "xlrelease.Facet.targetId",
+      "label": "Target Id",
+      "kind": "STRING",
+      "description": "The ID of the CI that the facet is applied to.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "variableMapping",
+      "fqn": "xlrelease.Facet.variableMapping",
+      "label": "Variable Mapping",
+      "kind": "MAP_STRING_STRING",
+      "description": "Variable Mapping",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

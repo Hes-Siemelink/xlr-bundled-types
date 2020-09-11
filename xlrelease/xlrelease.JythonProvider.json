@@ -1,0 +1,28 @@
+{
+  "type": "xlrelease.JythonProvider",
+  "label": "Jython script value provider",
+  "virtual": true,
+  "description": "",
+  "properties": [{
+    "name": "variable",
+    "fqn": "xlrelease.JythonProvider.variable",
+    "label": "Variable",
+    "kind": "CI",
+    "description": "Variable",
+    "category": "Common",
+    "asContainment": true,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "xlrelease.Variable",
+    "default": null
+  }],
+  "superTypes": [
+    "xlrelease.ScriptValueProviderConfiguration",
+    "xlrelease.ValueProviderConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

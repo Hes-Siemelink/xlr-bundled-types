@@ -1,0 +1,27 @@
+{
+  "type": "xlrelease.ScriptValueProviderConfiguration",
+  "label": "Script value provider",
+  "virtual": true,
+  "description": "",
+  "properties": [{
+    "name": "variable",
+    "fqn": "xlrelease.ScriptValueProviderConfiguration.variable",
+    "label": "Variable",
+    "kind": "CI",
+    "description": "Variable",
+    "category": "Common",
+    "asContainment": true,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": "xlrelease.Variable",
+    "default": null
+  }],
+  "superTypes": [
+    "xlrelease.ValueProviderConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

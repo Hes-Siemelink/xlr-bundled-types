@@ -1,15 +1,32 @@
 {
-  "type": "xlrelease.TaskNeedsAttentionRiskAssessor",
-  "label": "TaskNeedsAttentionRiskAssessor",
+  "type": "xlrelease.BitBucketCloudAPIKey",
+  "label": "API key",
   "virtual": false,
   "description": "Description unavailable",
   "properties": [
     {
-      "name": "title",
-      "fqn": "xlrelease.TaskNeedsAttentionRiskAssessor.title",
-      "label": "Title",
+      "name": "config",
+      "fqn": "xlrelease.BitBucketCloudAPIKey.config",
+      "label": "Config",
+      "kind": "CI",
+      "description": "Config",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.BitBucketCloudScmConnectorConfig",
+      "default": null
+    },
+    {
+      "name": "teamName",
+      "fqn": "xlrelease.BitBucketCloudAPIKey.teamName",
+      "label": "Team Name",
       "kind": "STRING",
-      "description": "The title of the item.",
+      "description": "The BitBucket Cloud team name",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -22,43 +39,26 @@
       "default": null
     },
     {
-      "name": "description",
-      "fqn": "xlrelease.TaskNeedsAttentionRiskAssessor.description",
-      "label": "Description",
+      "name": "apiKey",
+      "fqn": "xlrelease.BitBucketCloudAPIKey.apiKey",
+      "label": "Api Key",
       "kind": "STRING",
-      "description": "The description of the item.",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
-      "name": "weight",
-      "fqn": "xlrelease.TaskNeedsAttentionRiskAssessor.weight",
-      "label": "Weight",
-      "kind": "INTEGER",
-      "description": "The weight of the assessor in the total calculation",
+      "description": "The API key for BitBucket Cloud",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
       "required": true,
       "requiredInspection": false,
-      "password": false,
+      "password": true,
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": 1
+      "default": null
     }
   ],
   "superTypes": [
-    "xlrelease.TaskFlagRiskAssessor",
-    "xlrelease.RiskAssessor",
+    "xlrelease.BitBucketCloudScmCredential",
+    "xlrelease.ScmCredential",
     "udm.BaseConfigurationItem"
   ]
 }

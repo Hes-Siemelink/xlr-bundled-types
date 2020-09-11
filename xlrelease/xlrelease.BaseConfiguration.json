@@ -9,7 +9,7 @@
     "label": "Folder Id",
     "kind": "STRING",
     "description": "If set, this field contains the folder that this configuration belongs to.",
-    "category": "Common",
+    "category": "FOLDER_CONFIG",
     "asContainment": false,
     "inspection": false,
     "required": false,

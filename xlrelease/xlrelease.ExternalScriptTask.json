@@ -231,6 +231,23 @@
       "default": null
     },
     {
+      "name": "facets",
+      "fqn": "xlrelease.ExternalScriptTask.facets",
+      "label": "Facets",
+      "kind": "LIST_OF_CI",
+      "description": "Facets applied to the task.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.Facet",
+      "default": null
+    },
+    {
       "name": "attachments",
       "fqn": "xlrelease.ExternalScriptTask.attachments",
       "label": "Attachments",
@@ -771,6 +788,28 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "scriptEngine",
+      "fqn": "xlrelease.ExternalScriptTask.scriptEngine",
+      "label": "Script Engine",
+      "kind": "ENUM",
+      "description": "Language of the script. Allowed values are 'AUTODETECT', 'JYTHON' and 'GROOVY'.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "AUTODETECT",
+      "enumValues": [
+        "AUTODETECT",
+        "JYTHON",
+        "GROOVY"
+      ]
     }
   ],
   "superTypes": [

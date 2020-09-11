@@ -1,0 +1,66 @@
+{
+  "type": "xlrelease.BaseScmConnectorConfig",
+  "label": "Source Control Management",
+  "virtual": true,
+  "description": "",
+  "properties": [
+    {
+      "name": "folderId",
+      "fqn": "xlrelease.BaseScmConnectorConfig.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "FOLDER_CONFIG",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "title",
+      "fqn": "xlrelease.BaseScmConnectorConfig.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Symbolic name for the configuration",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "cardinality",
+      "fqn": "xlrelease.BaseScmConnectorConfig.cardinality",
+      "label": "Cardinality",
+      "kind": "INTEGER",
+      "description": "Cardinality",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": 1,
+      "hidden": true
+    }
+  ],
+  "superTypes": [
+    "xlrelease.PropertyConfiguration",
+    "xlrelease.Configuration",
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

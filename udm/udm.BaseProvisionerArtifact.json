@@ -144,6 +144,23 @@
       "default": null
     },
     {
+      "name": "credentials",
+      "fqn": "udm.BaseProvisionerArtifact.credentials",
+      "label": "Credentials",
+      "kind": "CI",
+      "description": "Credentials",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "credentials.Credentials",
+      "default": null
+    },
+    {
       "name": "hostTemplate",
       "fqn": "udm.BaseProvisionerArtifact.hostTemplate",
       "label": "Host Template",

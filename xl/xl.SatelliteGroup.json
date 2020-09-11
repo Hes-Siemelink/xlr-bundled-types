@@ -3,7 +3,7 @@
   "label": "Xl: Satellite Group",
   "virtual": false,
   "root": "Infrastructure",
-  "description": "XL satellite configuration item.",
+  "description": "XL satellite group configuration item.",
   "properties": [
     {
       "name": "tags",
