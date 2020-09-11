@@ -10,7 +10,7 @@
       "fqn": "xlrelease.Blackout.label",
       "label": "Label",
       "kind": "STRING",
-      "description": "User defined name of the blackout period",
+      "description": "The label of the calendar event.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -27,7 +27,7 @@
       "fqn": "xlrelease.Blackout.startDate",
       "label": "Start Date",
       "kind": "DATE",
-      "description": "The start date time of the blackout",
+      "description": "The start date and time of the calendar event.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -44,7 +44,7 @@
       "fqn": "xlrelease.Blackout.endDate",
       "label": "End Date",
       "kind": "DATE",
-      "description": "The end date time of the blackout",
+      "description": "The end date and time of the calendar event.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -57,5 +57,8 @@
       "default": null
     }
   ],
-  "superTypes": ["udm.BaseConfigurationItem"]
+  "superTypes": [
+    "xlrelease.CalendarEntry",
+    "udm.BaseConfigurationItem"
+  ]
 }

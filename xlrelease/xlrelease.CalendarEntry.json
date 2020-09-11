@@ -1,0 +1,60 @@
+{
+  "type": "xlrelease.CalendarEntry",
+  "label": "Xlrelease: Calendar Entry",
+  "virtual": true,
+  "description": "Base class for all calendar entries",
+  "properties": [
+    {
+      "name": "label",
+      "fqn": "xlrelease.CalendarEntry.label",
+      "label": "Label",
+      "kind": "STRING",
+      "description": "The label of the calendar event.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "startDate",
+      "fqn": "xlrelease.CalendarEntry.startDate",
+      "label": "Start Date",
+      "kind": "DATE",
+      "description": "The start date and time of the calendar event.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "endDate",
+      "fqn": "xlrelease.CalendarEntry.endDate",
+      "label": "End Date",
+      "kind": "DATE",
+      "description": "The end date and time of the calendar event.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

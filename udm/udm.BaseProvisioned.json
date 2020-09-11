@@ -50,10 +50,11 @@
       "required": true,
       "requiredInspection": false,
       "password": false,
-      "transient": false,
+      "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": 0
+      "default": 1,
+      "hidden": true
     },
     {
       "name": "provisioners",

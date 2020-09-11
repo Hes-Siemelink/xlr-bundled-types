@@ -3,7 +3,7 @@
   "label": "Udm: Base Applied Provisioner Artifact",
   "deployableType": "udm.BaseProvisionerArtifact",
   "containerType": "udm.BaseDeployed",
-  "virtual": false,
+  "virtual": true,
   "description": "Description unavailable",
   "properties": [
     {

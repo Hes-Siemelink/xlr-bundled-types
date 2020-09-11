@@ -1,0 +1,46 @@
+{
+  "type": "udm.BaseDeployedContainer",
+  "label": "Udm: Base Deployed Container",
+  "virtual": true,
+  "description": "Base type for all deployeds that are containers.",
+  "properties": [
+    {
+      "name": "deployable",
+      "fqn": "udm.BaseDeployedContainer.deployable",
+      "label": "Deployable",
+      "kind": "CI",
+      "description": "The deployable that this deployed is derived from.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Deployable",
+      "default": null
+    },
+    {
+      "name": "container",
+      "fqn": "udm.BaseDeployedContainer.container",
+      "label": "Container",
+      "kind": "CI",
+      "description": "The container on which this deployed runs.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "udm.Container",
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "udm.BaseDeployed",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -113,5 +113,8 @@
       "hidden": true
     }
   ],
-  "superTypes": ["udm.BaseConfigurationItem"]
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
 }

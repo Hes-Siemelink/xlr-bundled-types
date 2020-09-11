@@ -3,8 +3,8 @@
   "label": "Udm: Base Applied Provisioner",
   "deployableType": "udm.BaseProvisioner",
   "containerType": "udm.BaseDeployed",
-  "virtual": false,
-  "description": "The supertype of all EmbeddedDeployeds.",
+  "virtual": true,
+  "description": "Description unavailable",
   "properties": [
     {
       "name": "deployable",

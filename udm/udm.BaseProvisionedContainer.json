@@ -50,27 +50,11 @@
       "required": true,
       "requiredInspection": false,
       "password": false,
-      "transient": false,
+      "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": 0
-    },
-    {
-      "name": "provisioners",
-      "fqn": "udm.BaseProvisionedContainer.provisioners",
-      "label": "Provisioners",
-      "kind": "LIST_OF_CI",
-      "description": "A list of provisioners associated with the instance.",
-      "category": "Provisioning",
-      "asContainment": true,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": "udm.AppliedProvisioner",
-      "default": null
+      "default": 1,
+      "hidden": true
     },
     {
       "name": "boundConfigurationItems",
@@ -91,7 +75,7 @@
     }
   ],
   "superTypes": [
-    "udm.BaseProvisioned",
+    "udm.BaseDeployedContainer",
     "udm.BaseDeployed",
     "udm.BaseConfigurationItem"
   ]

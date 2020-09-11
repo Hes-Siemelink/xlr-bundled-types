@@ -111,6 +111,7 @@
   "superTypes": [
     "xlrelease.ExportHook",
     "xlrelease.Configuration",
+    "xlrelease.BaseConfiguration",
     "udm.BaseConfigurationItem"
   ]
 }

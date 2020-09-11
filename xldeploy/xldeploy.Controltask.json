@@ -22,6 +22,24 @@
       "default": null
     },
     {
+      "name": "configurationUri",
+      "fqn": "xldeploy.Controltask.configurationUri",
+      "label": "Configuration Uri",
+      "kind": "STRING",
+      "description": "URI of the HTML file to render the task for custom script tasks",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "",
+      "hidden": true
+    },
+    {
       "name": "maxOutputPropertySize",
       "fqn": "xldeploy.Controltask.maxOutputPropertySize",
       "label": "Max Output Property Size",
@@ -198,24 +216,6 @@
       "hidden": true
     },
     {
-      "name": "configurationUri",
-      "fqn": "xldeploy.Controltask.configurationUri",
-      "label": "Configuration Uri",
-      "kind": "STRING",
-      "description": "URI of the HTML file to render the task for custom script tasks",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": true,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "include\/xldeploy\/ControlTask\/xl-control-task-details.html",
-      "hidden": true
-    },
-    {
       "name": "ciId",
       "fqn": "xldeploy.Controltask.ciId",
       "label": "Configuration Item ID",
@@ -248,6 +248,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": ""
+    },
+    {
+      "name": "parameters",
+      "fqn": "xldeploy.Controltask.parameters",
+      "label": "Parameters",
+      "kind": "MAP_STRING_STRING",
+      "description": "A dictionary with key value pairs",
+      "category": "input",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     },
     {
       "name": "xlDeployTaskId",

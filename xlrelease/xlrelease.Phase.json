@@ -278,7 +278,7 @@
       "fqn": "xlrelease.Phase.originId",
       "label": "Origin Id",
       "kind": "STRING",
-      "description": "If given, then this phase has been copied based on this id",
+      "description": "If given, then this phase has been copied as a part of restart phase operation based on this id",
       "category": "Common",
       "asContainment": false,
       "inspection": false,

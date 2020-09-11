@@ -57,5 +57,8 @@
       "default": 6
     }
   ],
-  "superTypes": ["udm.BaseConfigurationItem"]
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
 }

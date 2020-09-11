@@ -2,6 +2,7 @@
   "type": "xlrelease.MapStringStringVariable",
   "label": "Xlrelease: Map String String Variable",
   "virtual": false,
+  "root": "Configuration",
   "description": "Description unavailable",
   "properties": [
     {
@@ -127,6 +128,7 @@
   "superTypes": [
     "xlrelease.VariableWithValue",
     "xlrelease.Variable",
+    "xlrelease.BaseConfiguration",
     "udm.BaseConfigurationItem"
   ]
 }

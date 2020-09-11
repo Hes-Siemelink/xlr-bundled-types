@@ -2,7 +2,7 @@
   "type": "xlrelease.Risk",
   "label": "Xlrelease: Risk",
   "virtual": false,
-  "description": "Summary of risk calculations",
+  "description": "Summary of risk calculations. Risk calculates the health of the release and how severe are issues",
   "properties": [
     {
       "name": "score",

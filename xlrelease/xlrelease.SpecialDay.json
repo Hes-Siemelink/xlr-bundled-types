@@ -10,7 +10,7 @@
       "fqn": "xlrelease.SpecialDay.label",
       "label": "Label",
       "kind": "STRING",
-      "description": "Label",
+      "description": "The label of the calendar event.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -23,28 +23,11 @@
       "default": ""
     },
     {
-      "name": "color",
-      "fqn": "xlrelease.SpecialDay.color",
-      "label": "Color",
-      "kind": "STRING",
-      "description": "Color",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": ""
-    },
-    {
-      "name": "date",
-      "fqn": "xlrelease.SpecialDay.date",
-      "label": "Date",
-      "kind": "STRING",
-      "description": "Date",
+      "name": "startDate",
+      "fqn": "xlrelease.SpecialDay.startDate",
+      "label": "Start Date",
+      "kind": "DATE",
+      "description": "The start date and time of the calendar event.",
       "category": "Common",
       "asContainment": false,
       "inspection": false,
@@ -55,7 +38,44 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "endDate",
+      "fqn": "xlrelease.SpecialDay.endDate",
+      "label": "End Date",
+      "kind": "DATE",
+      "description": "The end date and time of the calendar event.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "color",
+      "fqn": "xlrelease.SpecialDay.color",
+      "label": "Color",
+      "kind": "STRING",
+      "description": "The color used to mark the day in the calendar.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": ""
     }
   ],
-  "superTypes": ["udm.BaseConfigurationItem"]
+  "superTypes": [
+    "xlrelease.CalendarEntry",
+    "udm.BaseConfigurationItem"
+  ]
 }

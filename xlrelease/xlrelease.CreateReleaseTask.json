@@ -536,23 +536,6 @@
       "default": false
     },
     {
-      "name": "watchers",
-      "fqn": "xlrelease.CreateReleaseTask.watchers",
-      "label": "Watchers",
-      "kind": "SET_OF_STRING",
-      "description": "List of users watching this task",
-      "category": "Common",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
       "name": "automated",
       "fqn": "xlrelease.CreateReleaseTask.automated",
       "label": "Automated",
@@ -605,6 +588,23 @@
       "referencedType": null,
       "default": false,
       "hidden": true
+    },
+    {
+      "name": "watchers",
+      "fqn": "xlrelease.CreateReleaseTask.watchers",
+      "label": "Watchers",
+      "kind": "SET_OF_STRING",
+      "description": "List of users watching this task",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     },
     {
       "name": "newReleaseTitle",
@@ -706,6 +706,23 @@
       "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "riskProfile",
+      "fqn": "xlrelease.CreateReleaseTask.riskProfile",
+      "label": "Risk Profile",
+      "kind": "CI",
+      "description": "Risk profile that will be used by the created release",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.RiskProfile",
       "default": null
     }
   ],

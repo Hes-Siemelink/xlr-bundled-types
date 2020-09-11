@@ -33,10 +33,11 @@
       "required": false,
       "requiredInspection": false,
       "password": false,
-      "transient": false,
+      "transient": true,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "1"
+      "default": "1",
+      "hidden": true
     },
     {
       "name": "boundTemplates",

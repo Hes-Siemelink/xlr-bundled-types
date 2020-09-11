@@ -571,6 +571,7 @@
   "superTypes": [
     "host.Machine",
     "xlrelease.Configuration",
+    "xlrelease.BaseConfiguration",
     "udm.BaseConfigurationItem"
   ]
 }

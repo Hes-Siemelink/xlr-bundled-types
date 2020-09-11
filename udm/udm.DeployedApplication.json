@@ -124,23 +124,6 @@
       "default": null
     },
     {
-      "name": "provisioningId",
-      "fqn": "udm.DeployedApplication.provisioningId",
-      "label": "Provisioning Id",
-      "kind": "STRING",
-      "description": "The unique, generated ID that identifies this provisioning.",
-      "category": "Provisioning",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
       "name": "undeployDependencies",
       "fqn": "udm.DeployedApplication.undeployDependencies",
       "label": "Undeploy Dependencies",

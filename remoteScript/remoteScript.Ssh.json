@@ -261,11 +261,10 @@
       "required": true,
       "requiredInspection": false,
       "password": false,
-      "transient": true,
+      "transient": false,
       "size": "DEFAULT",
       "referencedType": null,
-      "default": "UTF-8",
-      "hidden": true
+      "default": "UTF-8"
     },
     {
       "name": "tmpDeleteOnDisconnect",

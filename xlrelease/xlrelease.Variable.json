@@ -107,5 +107,8 @@
       "default": null
     }
   ],
-  "superTypes": ["udm.BaseConfigurationItem"]
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
 }

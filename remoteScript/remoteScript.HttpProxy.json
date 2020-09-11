@@ -142,6 +142,7 @@
   "superTypes": [
     "remoteScript.Jumpstation",
     "xlrelease.Configuration",
+    "xlrelease.BaseConfiguration",
     "udm.BaseConfigurationItem"
   ]
 }

@@ -24,9 +24,9 @@
     {
       "name": "scanPlaceholders",
       "fqn": "udm.BaseDeployableArtifact.scanPlaceholders",
-      "label": "Scan Placeholders",
+      "label": "Replace Placeholders",
       "kind": "BOOLEAN",
-      "description": "Whether to scan this artifact for placeholders when it is imported",
+      "description": "Whether to scan this artifact to replace placeholders when it is imported",
       "category": "Placeholders",
       "asContainment": false,
       "inspection": false,
@@ -37,6 +37,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": true
+    },
+    {
+      "name": "preScannedPlaceholders",
+      "fqn": "udm.BaseDeployableArtifact.preScannedPlaceholders",
+      "label": "Pre-Scanned Placeholders",
+      "kind": "BOOLEAN",
+      "description": "Whether this artifact has been pre-scanned by the packager (ie. scanned for placeholders and checksum is set)",
+      "category": "Placeholders",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
     },
     {
       "name": "placeholders",

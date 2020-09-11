@@ -1,0 +1,64 @@
+{
+  "type": "xlrelease.RiskProfile",
+  "label": "Xlrelease: Risk Profile",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "A Risk Profile",
+  "properties": [
+    {
+      "name": "title",
+      "fqn": "xlrelease.RiskProfile.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "The name of risk profile.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "defaultProfile",
+      "fqn": "xlrelease.RiskProfile.defaultProfile",
+      "label": "Default Profile",
+      "kind": "BOOLEAN",
+      "description": "Is this default risk profile.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": false
+    },
+    {
+      "name": "riskProfileAssessors",
+      "fqn": "xlrelease.RiskProfile.riskProfileAssessors",
+      "label": "Risk Profile Assessors",
+      "kind": "MAP_STRING_STRING",
+      "description": "Risk Profile Assessors",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -109,6 +109,7 @@
   ],
   "superTypes": [
     "xlrelease.Variable",
+    "xlrelease.BaseConfiguration",
     "udm.BaseConfigurationItem"
   ]
 }

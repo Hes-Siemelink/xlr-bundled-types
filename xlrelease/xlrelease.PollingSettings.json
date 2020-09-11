@@ -21,5 +21,8 @@
     "referencedType": null,
     "default": 1
   }],
-  "superTypes": ["udm.BaseConfigurationItem"]
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
 }

@@ -1,0 +1,8 @@
+{
+  "type": "xlrelease.BaseConfiguration",
+  "label": "Xlrelease: Base Configuration",
+  "virtual": true,
+  "description": "Description unavailable",
+  "properties": [],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}
