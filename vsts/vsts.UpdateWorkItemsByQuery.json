@@ -112,6 +112,24 @@
       "hidden": true
     },
     {
+      "name": "failureHandlerEnabled",
+      "fqn": "vsts.UpdateWorkItemsByQuery.failureHandlerEnabled",
+      "label": "Failure Handler Enabled",
+      "kind": "BOOLEAN",
+      "description": "Indicates whether failure handler should be enabled",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": true,
+      "hidden": true
+    },
+    {
       "name": "iconLocation",
       "fqn": "vsts.UpdateWorkItemsByQuery.iconLocation",
       "label": "Icon Location",

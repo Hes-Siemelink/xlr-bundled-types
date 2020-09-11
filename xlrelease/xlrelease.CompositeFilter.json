@@ -1,0 +1,51 @@
+{
+  "type": "xlrelease.CompositeFilter",
+  "label": "Xlrelease: Composite Filter",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Composite filter to combine multiple child filters into a single AND or OR condition.",
+  "properties": [
+    {
+      "name": "operator",
+      "fqn": "xlrelease.CompositeFilter.operator",
+      "label": "Operator",
+      "kind": "ENUM",
+      "description": "Operator to apply when merging the child filters.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "OR",
+      "enumValues": [
+        "AND",
+        "OR"
+      ]
+    },
+    {
+      "name": "filters",
+      "fqn": "xlrelease.CompositeFilter.filters",
+      "label": "Filters",
+      "kind": "LIST_OF_CI",
+      "description": "Child filters.",
+      "category": "Common",
+      "asContainment": true,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.ReportFilter",
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.ReportFilter",
+    "udm.BaseConfigurationItem"
+  ]
+}

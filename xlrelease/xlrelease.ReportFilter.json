@@ -1,0 +1,8 @@
+{
+  "type": "xlrelease.ReportFilter",
+  "label": "Xlrelease: Report Filter",
+  "virtual": true,
+  "description": "Base reports filter",
+  "properties": [],
+  "superTypes": ["udm.BaseConfigurationItem"]
+}

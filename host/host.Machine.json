@@ -5,6 +5,23 @@
   "description": "Description unavailable",
   "properties": [
     {
+      "name": "folderId",
+      "fqn": "host.Machine.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
       "name": "title",
       "fqn": "host.Machine.title",
       "label": "Title",

@@ -3,6 +3,22 @@
   "label": "Xlrelease: Base Configuration",
   "virtual": true,
   "description": "Description unavailable",
-  "properties": [],
+  "properties": [{
+    "name": "folderId",
+    "fqn": "xlrelease.BaseConfiguration.folderId",
+    "label": "Folder Id",
+    "kind": "STRING",
+    "description": "If set, this field contains the folder that this configuration belongs to.",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
   "superTypes": ["udm.BaseConfigurationItem"]
 }

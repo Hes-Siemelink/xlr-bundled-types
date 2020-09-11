@@ -56,23 +56,6 @@
       "default": null
     },
     {
-      "name": "tags",
-      "fqn": "udm.BaseProvisionedContainer.tags",
-      "label": "Tags",
-      "kind": "SET_OF_STRING",
-      "description": "If set, only deployables with the same tag will be automatically mapped to this container.",
-      "category": "Deployment",
-      "asContainment": false,
-      "inspection": false,
-      "required": false,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": null
-    },
-    {
       "name": "ordinal",
       "fqn": "udm.BaseProvisionedContainer.ordinal",
       "label": "Ordinal",

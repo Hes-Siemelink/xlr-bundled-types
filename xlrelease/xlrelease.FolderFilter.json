@@ -1,0 +1,28 @@
+{
+  "type": "xlrelease.FolderFilter",
+  "label": "FolderFilter",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [{
+    "name": "folderId",
+    "fqn": "xlrelease.FolderFilter.folderId",
+    "label": "Folder Id",
+    "kind": "STRING",
+    "description": "The ID of the folder to filter.",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": true,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": ""
+  }],
+  "superTypes": [
+    "xlrelease.ReportFilter",
+    "udm.BaseConfigurationItem"
+  ]
+}

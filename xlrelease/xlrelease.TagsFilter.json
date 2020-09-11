@@ -1,0 +1,51 @@
+{
+  "type": "xlrelease.TagsFilter",
+  "label": "TagsFilter",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "operator",
+      "fqn": "xlrelease.TagsFilter.operator",
+      "label": "Operator",
+      "kind": "ENUM",
+      "description": "Operator to apply when filtering tags.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "CONTAINS_ANY",
+      "enumValues": [
+        "CONTAINS_ANY",
+        "CONTAINS_ALL"
+      ]
+    },
+    {
+      "name": "tags",
+      "fqn": "xlrelease.TagsFilter.tags",
+      "label": "Tags",
+      "kind": "LIST_OF_STRING",
+      "description": "The tags to filter.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.ReportFilter",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "xlrelease.GitOAuth2Token",
+  "label": "Personal access token",
+  "virtual": false,
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "config",
+      "fqn": "xlrelease.GitOAuth2Token.config",
+      "label": "Config",
+      "kind": "CI",
+      "description": "Config",
+      "category": "Scm",
+      "asContainment": true,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": "xlrelease.GitScmConnectorConfig",
+      "default": null
+    },
+    {
+      "name": "token",
+      "fqn": "xlrelease.GitOAuth2Token.token",
+      "label": "Token",
+      "kind": "STRING",
+      "description": "The OAuth2 user access token for GitHub",
+      "category": "Scm",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": true,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.GitScmCredential",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -6,6 +6,23 @@
   "description": "A Windows host with SSH",
   "properties": [
     {
+      "name": "folderId",
+      "fqn": "host.WindowsSsh.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
       "name": "title",
       "fqn": "host.WindowsSsh.title",
       "label": "Title",

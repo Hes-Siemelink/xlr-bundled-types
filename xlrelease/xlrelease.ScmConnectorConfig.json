@@ -1,0 +1,27 @@
+{
+  "type": "xlrelease.ScmConnectorConfig",
+  "label": "Source Control Management",
+  "virtual": true,
+  "description": "",
+  "properties": [{
+    "name": "folderId",
+    "fqn": "xlrelease.ScmConnectorConfig.folderId",
+    "label": "Folder Id",
+    "kind": "STRING",
+    "description": "If set, this field contains the folder that this configuration belongs to.",
+    "category": "Common",
+    "asContainment": false,
+    "inspection": false,
+    "required": false,
+    "requiredInspection": false,
+    "password": false,
+    "transient": false,
+    "size": "DEFAULT",
+    "referencedType": null,
+    "default": null
+  }],
+  "superTypes": [
+    "xlrelease.BaseConfiguration",
+    "udm.BaseConfigurationItem"
+  ]
+}

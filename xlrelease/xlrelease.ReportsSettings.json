@@ -6,6 +6,23 @@
   "description": "Description unavailable",
   "properties": [
     {
+      "name": "folderId",
+      "fqn": "xlrelease.ReportsSettings.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
       "name": "warningThreshold",
       "fqn": "xlrelease.ReportsSettings.warningThreshold",
       "label": "Number of incidents for Warning alert",

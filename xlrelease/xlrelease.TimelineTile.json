@@ -1,9 +1,27 @@
 {
   "type": "xlrelease.TimelineTile",
-  "label": "Release timeline tile",
+  "label": "Release timeline",
   "virtual": false,
-  "description": "Description unavailable",
+  "description": "Display a release schedule timeline and phases.",
   "properties": [
+    {
+      "name": "description",
+      "fqn": "xlrelease.TimelineTile.description",
+      "label": "Description",
+      "kind": "STRING",
+      "description": "Describes the functionality of this tile.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "MEDIUM",
+      "referencedType": null,
+      "default": null,
+      "hidden": true
+    },
     {
       "name": "configurationUri",
       "fqn": "xlrelease.TimelineTile.configurationUri",
@@ -39,6 +57,23 @@
       "referencedType": null,
       "default": null,
       "hidden": true
+    },
+    {
+      "name": "height",
+      "fqn": "xlrelease.TimelineTile.height",
+      "label": "Height",
+      "kind": "INTEGER",
+      "description": "Default height of this tile in number of dashboard rows it occupies",
+      "category": "gridConfiguration",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
     },
     {
       "name": "cacheEnabled",
@@ -113,6 +148,24 @@
       "hidden": true
     },
     {
+      "name": "supportedScopes",
+      "fqn": "xlrelease.TimelineTile.supportedScopes",
+      "label": "Supported Scopes",
+      "kind": "LIST_OF_STRING",
+      "description": "Determines on which levels the tile can be used.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": true,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "[release]",
+      "hidden": true
+    },
+    {
       "name": "variableMapping",
       "fqn": "xlrelease.TimelineTile.variableMapping",
       "label": "Variable Mapping",
@@ -128,6 +181,23 @@
       "size": "DEFAULT",
       "referencedType": null,
       "default": null
+    },
+    {
+      "name": "title",
+      "fqn": "xlrelease.TimelineTile.title",
+      "label": "Title",
+      "kind": "STRING",
+      "description": "Title of this tile",
+      "category": "input",
+      "asContainment": false,
+      "inspection": false,
+      "required": true,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "Release timeline"
     },
     {
       "name": "uri",
@@ -164,23 +234,6 @@
       "referencedType": null,
       "default": "include\/TimelineTile\/timeline-tile-details-view.html",
       "hidden": true
-    },
-    {
-      "name": "title",
-      "fqn": "xlrelease.TimelineTile.title",
-      "label": "Title",
-      "kind": "STRING",
-      "description": "Tile title",
-      "category": "input",
-      "asContainment": false,
-      "inspection": false,
-      "required": true,
-      "requiredInspection": false,
-      "password": false,
-      "transient": false,
-      "size": "DEFAULT",
-      "referencedType": null,
-      "default": "Release timeline"
     },
     {
       "name": "defaultDashboards",

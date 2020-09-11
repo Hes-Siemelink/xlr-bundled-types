@@ -6,6 +6,23 @@
   "description": "Configurable thresholds to determine how the risk scores will be calculated.",
   "properties": [
     {
+      "name": "folderId",
+      "fqn": "xlrelease.RiskGlobalThresholds.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
       "name": "atRiskFrom",
       "fqn": "xlrelease.RiskGlobalThresholds.atRiskFrom",
       "label": "At Risk From",

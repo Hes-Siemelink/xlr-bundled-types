@@ -1,0 +1,71 @@
+{
+  "type": "xlrelease.DateFilter",
+  "label": "DateFilter",
+  "virtual": false,
+  "root": "Configuration",
+  "description": "Description unavailable",
+  "properties": [
+    {
+      "name": "timeFrame",
+      "fqn": "xlrelease.DateFilter.timeFrame",
+      "label": "Time Frame",
+      "kind": "ENUM",
+      "description": "Predefined time-frame to apply to the reports query.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": "LAST_SIX_MONTHS",
+      "enumValues": [
+        "LAST_MONTH",
+        "LAST_THREE_MONTHS",
+        "LAST_SIX_MONTHS",
+        "LAST_YEAR",
+        "RANGE"
+      ]
+    },
+    {
+      "name": "from",
+      "fqn": "xlrelease.DateFilter.from",
+      "label": "From",
+      "kind": "DATE",
+      "description": "Overrides the predefined time-frame with a custom from date.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
+      "name": "to",
+      "fqn": "xlrelease.DateFilter.to",
+      "label": "To",
+      "kind": "DATE",
+      "description": "Overrides the predefined time-frame with a custom to date.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    }
+  ],
+  "superTypes": [
+    "xlrelease.ReportFilter",
+    "udm.BaseConfigurationItem"
+  ]
+}

@@ -6,6 +6,23 @@
   "description": "Machine that can be used to create a tunneled connection to a destination host.",
   "properties": [
     {
+      "name": "folderId",
+      "fqn": "remoteScript.SshJumpstation.folderId",
+      "label": "Folder Id",
+      "kind": "STRING",
+      "description": "If set, this field contains the folder that this configuration belongs to.",
+      "category": "Common",
+      "asContainment": false,
+      "inspection": false,
+      "required": false,
+      "requiredInspection": false,
+      "password": false,
+      "transient": false,
+      "size": "DEFAULT",
+      "referencedType": null,
+      "default": null
+    },
+    {
       "name": "title",
       "fqn": "remoteScript.SshJumpstation.title",
       "label": "Title",
@@ -179,7 +196,7 @@
       "requiredInspection": false,
       "password": false,
       "transient": false,
-      "size": "DEFAULT",
+      "size": "LARGE",
       "referencedType": null,
       "default": null
     },
